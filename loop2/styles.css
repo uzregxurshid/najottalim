@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #2f2f2f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh
+}
+
+.main-content {
+  width: 430px;
+  background-color: #fdec51;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 60px;
+  padding-bottom: 20px
+}
+
+.header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+
+.header-head {
+  font-weight: normal;
+  font-size: 21px
+}
+
+.out-btn-img {
+  -webkit-filter: invert(42%);
+          filter: invert(42%);
+}
+
+.out-btn-img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.form-content {
+  -webkit-box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.61);
+          box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.61);
+  margin-top: 40px;
+  width: 450px;
+  background-color: #ffffff;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 35px
+}
+
+.avatar-img {
+  width: 50px;
+  height: auto;
+  margin-top: -25px;
+  border-radius: 50%
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column
+}
+
+.username-content,
+.email-content,
+.bio-content {
+  border-bottom: 1px solid #bfbbb8;
+  width: 380px;
+  margin-top: 10px
+}
+
+.label-username,
+.label-last-name,
+.label-first-name,
+.label-email,
+.label-bio {
+  text-transform: uppercase;
+  color: #bfbbb8;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 40px
+}
+
+.username,
+.email,
+.bio {
+  width: inherit;
+  outline: none;
+  border: none;
+  font-weight: normal;
+  font-size: 16px;
+  padding-bottom: 10px;
+  padding-top: 5px
+}
+
+.username::-webkit-input-placeholder, .email::-webkit-input-placeholder, .bio::-webkit-input-placeholder {
+  color: #6e6e6e;
+  font-family: "Roboto";
+  font-weight: 500
+}
+
+.username::-moz-placeholder, .email::-moz-placeholder, .bio::-moz-placeholder {
+  color: #6e6e6e;
+  font-family: "Roboto";
+  font-weight: 500
+}
+
+.username:-ms-input-placeholder, .email:-ms-input-placeholder, .bio:-ms-input-placeholder {
+  color: #6e6e6e;
+  font-family: "Roboto";
+  font-weight: 500
+}
+
+.username::-ms-input-placeholder, .email::-ms-input-placeholder, .bio::-ms-input-placeholder {
+  color: #6e6e6e;
+  font-family: "Roboto";
+  font-weight: 500
+}
+
+.username::placeholder,
+.email::placeholder,
+.bio::placeholder {
+  color: #6e6e6e;
+  font-family: "Roboto";
+  font-weight: 500
+}
+
+.fio-content {
+  border-bottom: 1px solid #bfbbb8;
+  width: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px
+}
+
+.first-name,
+.last-name {
+  outline: none;
+  border: none;
+  font-weight: normal;
+  font-size: 16px;
+  padding-bottom: 10px;
+  padding-top: 5px
+}
+
+.first-name::-webkit-input-placeholder, .last-name::-webkit-input-placeholder {
+  color: #6e6e6e;
+  font-family: "Roboto";
+  font-weight: 500
+}
+
+.first-name::-moz-placeholder, .last-name::-moz-placeholder {
+  color: #6e6e6e;
+  font-family: "Roboto";
+  font-weight: 500
+}
+
+.first-name:-ms-input-placeholder, .last-name:-ms-input-placeholder {
+  color: #6e6e6e;
+  font-family: "Roboto";
+  font-weight: 500
+}
+
+.first-name::-ms-input-placeholder, .last-name::-ms-input-placeholder {
+  color: #6e6e6e;
+  font-family: "Roboto";
+  font-weight: 500
+}
+
+.first-name::placeholder,
+.last-name::placeholder {
+  color: #6e6e6e;
+  font-family: "Roboto";
+  font-weight: 500
+}
+
+.footer {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end
+}
+
+.footer-links {
+  font-weight: normal;
+  text-decoration: none;
+  margin-left: 30px;
+  color: #6e6e6e
+}
+
+.footer-links:hover {
+  color: #000000;
+}
+
+.bio {
+  resize: vertical;
+}

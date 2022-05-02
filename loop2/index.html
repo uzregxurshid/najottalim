@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./normalize.css">
+</head>
+
+<body>
+  <!--
+    FYI:
+    Textarea resize in the design is a native feature of browsers.
+    Also there is no close icon in the assets, so you should try to find another way of implementing it.
+  -->
+  <!-- #region -->
+  <div class="main-content">
+    <div class="settings">
+      <!-- #region -->
+      <div class="header">
+        <h2 class="header-head">Account settings</h2>
+        <a class="out-btn" href="#">
+          <img class="out-btn-img" src="./img/x.svg" alt="x close button" style="width: 12px;height:16px;">
+        </a>
+      </div>
+      <!-- #endregion -->
+
+      <!-- #region -->
+      <div class="form-content">
+        <span class="avatar">
+          <img class="avatar-img" src="./img/avatar.jpg" alt="avatar">
+        </span>
+        <form class="form" action="#" method="post">
+
+          <div class="username-content">
+            <label class="label-username" for="username">Username</label>
+            <br>
+            <input class="username" type="text" name="username" id="username" placeholder="Enter your username" autocomplete="off">
+          </div>
+
+          <div class="fio-content">
+            <div class="fname">
+              <label class="label-first-name" for="first-name">First name</label>
+              <br>
+              <input class="first-name" type="text" name="first-name" id="first-name" placeholder="Enter your first name" autocomplete="off">
+            </div>
+
+            <div class="lname">
+              <label class="label-last-name"  for="last-name">last name</label>
+              <br>
+              <input class="last-name" type="text" name="last-name" id="last-name" placeholder="Enter your last name" autocomplete="off">
+            </div>
+          </div>
+
+          <div class="email-content">
+            <label class="label-email" for="email">Email</label>
+            <br>
+            <input class="email" type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off">
+          </div>
+
+          <div class="bio-content">
+            <label class="label-bio" for="bio">bio</label>
+            <br>
+            <textarea class="bio" name="bio" id="bio" placeholder="Tell us about yourself" cols="30" rows="3"></textarea>
+          </div>
+
+        </form>
+      </div>
+      <!-- #endregion -->
+
+      <!-- #region -->
+      <div class="footer">
+        <a class="footer-links" href="#">Cancel</a>
+        <a class="footer-links" href="#">Save</a>
+      </div>
+      <!-- #endregion -->
+    </div>
+  </div>
+  <!-- #endregion -->
+</body>
+
+</html>
