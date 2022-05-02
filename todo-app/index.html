@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+    <div class="h1 text-center mt-2">Todo App
+      <span id="isCompleted">
+        0
+      </span>
+      /
+      <span id="total">
+        0
+      </span>
+    </div>
+    <form class="form row flex-column flex-sm-row d-sm-flex align-items-center" action="https://echo.htmlacademy.ru">
+      <div class="col col-sm-9 col-lg-10">
+        <label for="todotext" class="form-label">Input your todo</label>
+        <input type="text" class="form-control" name="todotext" id="todotext" aria-describedby="helpId"
+          placeholder="Type something.." autocomplete="off" required>
+        <small id="helpId" class="form-text text-muted">Write down what you want to do</small>
+      </div>
+
+      <div class="col col-sm-3 col-lg-2 mt-2">
+        <button type="submit" class="btn btn-success w-100">Submit</button>
+
+
+      </div>
+    </form>
+
+    <div class="h6 text-success text-center my-2" id="current">...</div>
+
+    <div class="row border border-black-50 rounded mx-4 mt-4 p-2" id="todol">
+
+
+
+
+    </div>
+
+  </div>
+
+  <div class="modal" tabindex="-1" id="modalw">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="title">lorem</h5>
+          <button id="close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            onclick="hide()"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="modal" class="form-label">Input your editable text</label>
+            <input type="text" class="form-control" name="modal" id="modal" aria-describedby="helpId"
+              placeholder="Type something ..." autocomplete="off" required>
+              <p class="mt-2 fw-bold">Old: <span class="fw-normal" id="veryold"></span>
+              <br>Edited time: <span class="fw-normal" id="timeedit"></span> </p>
+          </div>
+
+          <div class="modal-footer">
+            <button id="cancel" type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+              onclick="hide()">Close</button>
+            <button id="save" type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

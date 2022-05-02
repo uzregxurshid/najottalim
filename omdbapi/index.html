@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omdb</title>
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <link rel="manifest" href="./img/site.webmanifest">
+</head>
+
+<body>
+  <div class="loader">
+    <div class="circles">
+      <div class="circle circle1">
+      </div>
+      <div class="circle circle2">
+
+      </div>
+      <div class="circle circle3">
+
+      </div>
+      <div class="circle circle4">
+
+      </div>
+      <div class="circle circle5">
+
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Founded movies <span class="count">0</span></a>
+      </button>
+      <form class="d-flex form">
+        <input class="form-control me-2 searchtext" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link prev" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link next" href="#">Next</a></li>
+      </ul>
+    </nav>
+
+    <div class="cards d-flex flex-wrap">
+
+
+
+    </div>
+
+
+  </div>
+
+
+  <template id="card">
+    <div class="card m-2" style="width: 18rem;">
+      <img src="https://picsum.photos/200/90" class="card-img-top tdata" alt="...">
+      <div class="card-body">
+        <h5 class="card-title tdata">What if</h5>
+        <p class="card-text mb-1"><b>Year: </b> <span class="tdata"></span></p>     
+        <a href="#" class="btn btn-primary tdata">More info</a>
+      </div>
+    </div>
+  </template>
+  <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/animate.js"></script>
+  <!-- <script src="./js/main.js"></script> -->
+</body>
+
+</html>

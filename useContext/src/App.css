@@ -1,0 +1,34 @@
+.blur {
+    width: 400px;
+    height: 400px;
+    background-color: #81e9e6;
+    position: absolute;
+    z-index: -2;
+    left: calc(50% - 280px);
+    border-radius: 50%;
+    filter: blur(20px);
+}
+
+.blur2 {
+    width: 500px;
+    height: 500px;
+    background-color: #2a6fdb;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    left: 50%;
+    filter: blur(20px);
+    animation: Blur infinite 20s linear;
+}
+
+@keyframes Blur {
+    0% {
+        top: 20%;
+    }
+    50% {
+        top: 25%;
+    }
+    100% {
+        top: 20%;
+    }
+}

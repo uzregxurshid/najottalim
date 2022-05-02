@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everest Edu</title>
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=0ee89314-5d3f-4060-ad09-5e8da1ff8a72&lang=ru_RU">
+  </script>
+  <script>
+    ymaps.ready(init);
+
+    function init() {
+      var myMap = new ymaps.Map("map", {
+          center: [41.31, 69.27],
+          zoom: 11
+        }, {
+          searchControlProvider: 'yandex#search'
+        }),
+
+        // Создаем геообъект с типом геометрии "Точка".
+        myGeoObject = new ymaps.GeoObject({
+          // Описание геометрии.
+          geometry: {
+            type: "Point",
+            coordinates: [41.31, 69.27]
+          },
+          // Свойства.
+          properties: {
+            // Контент метки.
+            iconContent: 'Everest',
+            hintContent: 'Go learn with us'
+          }
+        }, {
+
+          preset: 'islands#blackStretchyIcon',
+
+          draggable: true
+        }),
+        myPieChart = new ymaps.Placemark();
+
+      myMap.geoObjects
+
+
+
+        .add(new ymaps.Placemark([41.224524, 69.213630], {
+          balloonContent: 'цвет <strong>Everest Eduacation</strong>',
+          iconCaption: 'Everest Education'
+        }, {
+          preset: 'islands#greenDotIconWithCaption'
+        }))
+
+    }
+  </script>
+</head>
+
+<body>
+    <!-- #region -->
+    <div class="header">
+      <div class="header-top">
+        <div class="left"><a href="#" class="log-link"><img src="./images/logo.svg" alt="Everest logo" class="logo"
+              style="width: 114px;height:auto"></a>
+        </div>
+        <div class="right">
+          <ul class="header-list">
+            <li class="header-items"><a href="#" class="header-link active">Home</a></li>
+            <li class="header-items"><a href="#" class="header-link">About us</a></li>
+            <li class="header-items"><a href="#" class="header-link">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+      <!-- #region -->
+      <div class="header-welcome">
+        <h1 class="welcome">Welcome to us site</h1>
+        <p class="welcome-lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ab, nemo, ea et ipsum magni
+          aliquam recusandae rerum alias modi soluta mollitia, odit animi natus consequunturquibusdam nam explicabo!
+          Explicabo, accusamus.</p>
+        <a href="#" class="header-button">Learn more</a>
+      </div>
+      <!-- #endregion -->
+  
+
+      <!-- #region -->
+      <div class="down">
+        <a href="#courses" class="down-link"><img src="./images/down.svg" alt="down" class="down-button"
+            style="width:45px;height:auto;"></a>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region -->
+    <div class="course" id="courses">
+      <h2 class="course-head">
+        Bizning kurslar
+      </h2>
+      <ul class="course-list">
+        <li class="course-items">
+          <img src="./images/list/Ellipse1.png" alt="English" class="course-img" style="width:200px;height:auto;">
+          <h3 class="list-head">Ingliz tili</h3>
+          <p class="list-lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Repellendus eos magnam facere
+            temporibus culpa,praesentium quas beatae, repudiandae nulla ipsamreiciendis enim consectetur veritatis
+            asperiores corporisrerum voluptatum id quasi.</p>
+        </li>
+        <li class="course-items">
+          <img src="./images/list/Ellipse2.png" alt="Russian" class="course-img" style="width:200px;height:auto;">
+          <h3 class="list-head">Rus tili</h3>
+          <p class="list-lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Repellendus eos magnam facere
+            temporibus culpa,praesentium quas beatae, repudiandae nulla ipsamreiciendis enim consectetur veritatis
+            asperiores corporisrerum voluptatum id quasi.</p>
+        </li>
+        <li class="course-items">
+          <img src="./images/list/Ellipse3.png" alt="Math" class="course-img" style="width:200px;height:auto;">
+          <h3 class="list-head">Matematika</h3>
+          <p class="list-lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Repellendus eos magnam facere
+            temporibus culpa,praesentium quas beatae, repudiandae nulla ipsamreiciendis enim consectetur veritatis
+            asperiores corporisrerum voluptatum id quasi.</p>
+        </li>
+        <li class="course-items">
+          <img src="./images/list/Ellipse4.png" alt="Physics" class="course-img" style="width:200px;height:auto;">
+          <h3 class="list-head">Fizika</h3>
+          <p class="list-lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Repellendus eos magnam facere
+            temporibus culpa,praesentium quas beatae, repudiandae nulla ipsamreiciendis enim consectetur veritatis
+            asperiores corporisrerum voluptatum id quasi.</p>
+        </li>
+        <li class="course-items">
+          <img src="./images/list/Ellipse5.png" alt="History" class="course-img" style="width:200px;height:auto;">
+          <h3 class="list-head">Tarix</h3>
+          <p class="list-lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Repellendus eos magnam facere
+            temporibus culpa,praesentium quas beatae, repudiandae nulla ipsamreiciendis enim consectetur veritatis
+            asperiores corporisrerum voluptatum id quasi.</p>
+        </li>
+        <li class="course-items">
+          <img src="./images/list/Ellipse6.png" alt="Mother tongue" class="course-img" style="width:200px;height:auto;">
+          <h3 class="list-head">Ona tili</h3>
+          <p class="list-lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Repellendus eos magnam facere
+            temporibus culpa,praesentium quas beatae, repudiandae nulla ipsamreiciendis enim consectetur veritatis
+            asperiores corporisrerum voluptatum id quasi.</p>
+        </li>
+      </ul>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region -->
+    <div class="teacher">
+      <h2 class="teacher-head">Bizning o'qituvchilar</h2>
+      <ul class="teacher-list">
+        <li class="teacher-items">
+          <img src="./images/teachers/teacher2.png" alt="teacher lorem picture" class="teacher-img"
+            style="width:190px;height:auto">
+          <h3 class="teacher-name">Lorem Ipsumov</h3>
+          <p class="teacher-description">Lorem ipsum dolor sit ametconsectetur adipisicing elitaperiam animi</p>
+        </li>
+        <li class="teacher-items">
+          <img src="./images/teachers/teacher2.png" alt="teacher lorem picture" class="teacher-img"
+            style="width:190px;height:auto">
+          <h3 class="teacher-name">Lorem Ipsumov</h3>
+          <p class="teacher-description">Lorem ipsum dolor sit ametconsectetur adipisicing elitaperiam animi</p>
+        </li>
+        <li class="teacher-items">
+          <img src="./images/teachers/teacher3.png" alt="teacher lorem picture" class="teacher-img"
+            style="width:190px;height:auto">
+          <h3 class="teacher-name">Lorem Ipsumova</h3>
+          <p class="teacher-description">Lorem ipsum dolor sit ametconsectetur adipisicing elitaperiam animi</p>
+        </li>
+        <li class="teacher-items">
+          <img src="./images/teachers/teacher4.png" alt="teacher lorem picture" class="teacher-img"
+            style="width:190px;height:auto">
+          <h3 class="teacher-name">Lorem Ipsumova</h3>
+          <p class="teacher-description">Lorem ipsum dolor sit ametconsectetur adipisicing elitaperiam animi</p>
+        </li>
+      </ul>
+    </div>
+    <!-- #endregion -->
+    <div class="contacts">
+      <div class="maps">
+        <div class="map" id="map">
+        <div class="location">
+        </div>
+      </div>
+    </div>
+    <div class="phone">
+      <h2 class="kurslarimiz">
+        Kurslarimizga yozilish uchun adminstrator bilan bog‘laning
+      </h2>
+      <div class="phonee">
+        <a href="tel:+998911234567" class="telephone"><img src="./images/phone.svg" alt="phone"
+            style="width: 39px;height:auto;"> 99 123-45-67</a>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+
+  <div class="footer">
+    <div class="left">
+      <a href="#">
+        <img src="./images/logof.svg" alt="logo" class="logof"></a>
+      <p class="loreem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, deserunt laudantium reprehenderit
+        odit recusandae sed, aperiam animi debitis quae eos voluptate! Nihil deleniti at, repellat debitis consequatur
+        ipsa fugit ea?</p>
+      <p class="copyy">All rights reserved. 2021</p>
+    </div>
+    <div class="right">
+      <div class="right1">
+        <h3 class="aboutus">About us</h3>
+        <ul class="labout">
+          <li><a href="tel:+998911234567"><img src="./images/phonef1.svg" alt="phone">99 123-45-67</a></li>
+          <li><a href="tel:+998911234567" style="color:#FFBB80;"><img src="./images/phonef2.svg" alt="phone">99
+              123-45-67</a></li>
+          <li><a href="mailto:everestedu@gmail.com">everestedu@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="right2">
+        <h3 class="social">Social networks</h3>
+        <ul class="labout">
+          <li><a href="#"><img src="./images/tg.svg" alt="social" class="social">Telegram</a></li>
+          <li><a href="#" style="color:#FFBB80;"><img src="./images/insta.svg" alt="social" class="social">Instagram</a>
+          </li>
+          <li><a href="#"><img src="./images/fb.svg" alt="social" class="social">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+</div>7
+
+
+
+  
+</body>
+
+</html>

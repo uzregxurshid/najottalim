@@ -1,0 +1,8 @@
+.col4{
+    max-height: 100vh !important;
+   overflow-y: scroll;
+
+}
+.col::-webkit-scrollbar{
+    width: 0 !important;
+}

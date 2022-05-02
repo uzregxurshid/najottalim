@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Challenge</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+</head>
+
+<body>
+
+  <!--
+    Ah, it smells like a new challenge!
+
+    This time we build a concept of some job search website.
+    It's more about small details this time and if you haven't yet tried splitting
+    your css into separate component files - that's the perfect time to try.
+    (Use @import in css to achieve that)
+
+    The other gimmick we introduce here is about using font icons instead of inserting images into our code.
+    The easiest out-of-the-box method is to use Google Material Icons,
+    so read about the implementation before you start:
+    https://material.io/icons/
+
+    And good luck!
+  -->
+  <header class="header">
+    <nav class="header__nav">
+      <a class="header__logo logo" href="#">
+        <img class="header__logo logo__img" src="./img/logo.png" alt="linkedin" style="width: 28px;height: auto;">
+      </a>
+      <div class="header__block">
+        <input class="header__search" type="search" name="search" id="search" placeholder="search" autocomplete="off">
+        <span class="header__searching material-icons">
+          search
+        </span>
+      </div>
+      <div class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__items">
+            <a class="menu__link" href="#">
+              Home
+            </a>
+          </li>
+          <li class="menu__items">
+            <a class="menu__link" href="#">
+              Profile
+            </a>
+          </li>
+          <li class="menu__items">
+            <a class="menu__link" href="#">
+              Connections
+            </a>
+          </li>
+          <li class="menu__items">
+            <a class="menu__link" href="#">
+              Interest
+            </a>
+          </li>
+          <li class="menu__items">
+            <a class="menu__link menu__link--alert" href="#">
+              Try premium
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__actions actions">
+        <ul class="actions__list">
+          <li class="actions__items">
+            <a class="actions__link" href="#">
+              <span class="actions__img actions__img--success material-icons">
+                comment
+              </span>
+            </a>
+          </li>
+          <li class="actions__items">
+            <a class="actions__link" href="#">
+              <span class="actions__ img actions__img--danger material-icons">
+                notifications
+              </span>
+            </a>
+          </li>
+          <li class="actions__items">
+            <a class="actions__link" href="#">
+              <span class="actions__img actions__img--secondary material-icons">
+                person_add
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="header__avatar avatar" href="#">
+        <img class="avatar__img" src="./img/avatar.jpg" alt="avatar" style="width: 40px;height: auto;">
+      </a>
+
+      </nav>
+      <div class="header__line"></div>
+      <div class="header__pages pages">
+        <ul class="pages__list">
+          <li class="pages__items pages__items--active">
+            <a class="pages__link" href="#post">
+              Posts
+            </a>
+          </li>
+          <li class="pages__items">
+            <a class="pages__link" href="#background">
+              Background
+            </a>
+          </li>
+          <li class="pages__items">
+            <a class="pages__link" href="#recomendations">
+              Recommendations
+            </a>
+          </li>
+          <li class="pages__items">
+            <a class="pages__link" href="#following">
+              Following
+            </a>
+          </li>
+        </ul>
+      </div>
+  </header>
+  <main class="main">
+    <section class="main__feed feed">
+      <div class="feed__person">
+        <img class="feed__img" src="./img/bill-gates-avatar.png" alt="avatar"
+          style="width:100px;height:auto;border-radius: 50%;">
+        <h3 class="feed__name">Bill Gates</h3>
+        <p class="feed__position">Microsoft Founder</p>
+        <p class="feed__locations">Greater Seattle Area</p>
+        <div class="feed__buttons">
+          <a class="feed__link feed__link--primary" href="#">Follow</a>
+          <a class="feed__select" href="#">
+            Connect<span class="material-icons">
+              expand_more
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="feed__status status">
+        <div class="status__block">
+          <div class="status__center">
+            <h3 class="status__head">200</h3>
+            <p class="status__text">connections</p>
+          </div>
+        </div>
+        <div class="status__block">
+          <div class="status__center">
+            <h3 class="status__head">
+              1.9M
+            </h3>
+            <p class="status__text">
+              followers
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="feed__links links">
+        <div class="links__block">
+          <span class="links__icon material-icons">
+            link
+          </span>
+          <a class="links__link" href="#">
+            linkedin.com/in/williamhgates/
+          </a>
+        </div>
+        <div class="links__block">
+          <span class="links__icon material-icons">
+            language
+          </span>
+          <a class="links__link" href="#">
+            billgates.com
+          </a>
+        </div>
+      </div>
+      <div class="feed__export export">
+        <a class="export__link" href="#">
+          <span class="export__img material-icons">
+            file_upload
+          </span>
+          Export page as PDF
+        </a>
+      </div>
+    </section>
+    <section class="main__container container">
+      <div class="container__post post" id="post">
+        <div class="post__header">
+          <h2 class="post__head">Posts</h2>
+          <div class="post__navigator">
+            <div class="post__img">
+              <span class="material-icons">
+                arrow_back_ios
+              </span>
+            </div>
+            <div class="post__img">
+              <span class="material-icons">
+                arrow_forward_ios
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="post__line"></div>
+        <div class="post__articles">
+          <ul class="post__list">
+            <li class="post__items">
+              <a class="post__link" href="#">
+              <img class="post__image" src="./img/article1.jpg" alt="article image" style="width: 175px;height: auto;">
+
+                <h3 class="post__themes">
+                  3 Myths That Confuse Top-Managers
+                </h3>
+              </a>
+              <div class="post__date">
+                February 19, 2016
+              </div>
+            </li>
+            <li class="post__items">
+              <a class="post__link" href="#">
+              <img class="post__image" src="./img/article2.jpg" alt="article image" style="width: 175px;height: auto;">
+
+                <h3 class="post__themes">
+                  How much do we spend on hot drinks
+                </h3>
+              </a>
+              <div class="post__date">
+                February 19, 2016
+              </div>
+            </li>
+            <li class="post__items">
+              <a class="post__link" href="#">
+              <img class="post__image" src="./img/article3.jpg" alt="article image" style="width: 175px;height: auto;">
+
+                <h3 class="post__themes">
+                  Good news you might have noticed
+                </h3>
+              </a>
+              <div class="post__date">
+                February 19, 2016
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container__background background" id="background">
+        <div class="background__header">
+          <h2 class="background__head">Background</h2>
+        </div>
+        <div class="background__line"></div>
+        <div class="background__content">
+          <div class="background__summary">
+            <h3 class="background__title">
+              <span class="material-icons">
+                assignment
+              </span> Summary
+            </h3>
+            <div class="background__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sapiente atque, nulla quod pariatur quo
+              assumenda vel velit impedit molestias voluptatem magnam eum inventore? Rem explicabo consequatur eos
+              nesciunt voluptatem quis perspiciatis doloribus repellat facere illo perferendis, non iste architecto amet
+              harum? Veritatis aliquid itaque natus repudiandae, at magnam eos quasi dicta consequuntur tenetur. Cumque
+              soluta iste ipsum debitis qui placeat exercitationem blanditiis iusto.
+            </div>
+          </div>
+          <div class="background__experience">
+            <h3 class="background__title">
+              <span class="material-icons">
+                work
+              </span> Experience
+            </h3>
+            <div class="background__text">
+              <div class="background__art">
+                <span class="background__radio material-icons">
+                  radio_button_unchecked
+                </span>
+
+                <span class="background__radio material-icons">
+                  radio_button_unchecked
+                </span>
+              </div>
+              <div class="background__jobs">
+                <div class="background__job">
+                  <div class="background__info">
+                    <p class="background__years">2020-Present</p>
+                    <p class="background__position">Co-founder, Chairman</p>
+                    <a class="background__company" href="#">Microsoft</a>
+                  </div>
+                  <div class="background__logo">
+                    <a class="bakground__logotip" href="#">
+                      <img src="./img/logo-microsoft.png" alt="Microsoft logo" style="width: 80px;height: auto;">
+                    </a>
+                  </div>
+                </div>
+                <div class="background__job">
+                  <div class="background__info">
+                    <p class="background__years">1992-1999</p>
+                    <p class="background__position">Senior Developer</p>
+                    <a class="background__company" href="#">Youtube</a>
+                  </div>
+                  <div class="background__logo">
+                    <a class="bakground__logotip" href="#">
+                      <img src="./img/logo-youtube.png" alt="Microsoft logo" style="width: 100px;height: auto;">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="background__education">
+            <h3 class="background__title">
+              <span class="material-icons">
+                account_balance
+              </span> Education
+            </h3>
+            <div class="background__text">
+              <div class="background__art">
+                <span class="background__radio material-icons">
+                  radio_button_unchecked
+                </span>
+
+                <span class="background__radio material-icons">
+                  radio_button_unchecked
+                </span>
+              </div>
+              <div class="background__schooling">
+                <div class="background__job">
+                  <div class="background__info">
+                    <p class="background__years">1973-1975</p>
+                    <p class="background__degree">Harvard University</p>
+                    <a class="background__university" href="#">BS Computer Science</a>
+                  </div>
+                </div>
+                <div class="background__job">
+                  <div class="background__info">
+                    <p class="background__years">1960-1973</p>
+                    <p class="background__degree">Lakeside School, Seattle</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="background__skills">
+            <h3 class="background__title">
+              <span class="material-icons material-icons-outlined">
+                lightbulb
+              </span>
+              Skills
+            </h3>
+            <div class="background__text">
+              <div class="background__skill">
+                <div class="background__similar">
+                  <div class="background__profi">
+                    <span class="background__count">74</span>
+                    <p class="background__proffession">
+                      social media marketing
+                    </p>
+                  </div>
+                  <div class="background__avatars">
+                    <ul class="background__list">
+                      <li class="background__items">
+                        <a class="background__link" href="#">
+                          <img src="./img/avatar.jpg" alt="avatar" style="width: 40px;height: 40px;border-radius:50%;">
+                        </a>
+                      </li>
+                      <li class="background__items">
+                        <a class="background__link" href="#">
+                          <img src="./img/avatar2.jpg" alt="avatar" style="width: 40px;height: 40px;border-radius:50%;">
+                        </a>
+                      </li>
+                      <li class="background__items">
+                        <a class="background__link" href="#">
+                          <img src="./img/avatar3.jpg" alt="avatar" style="width: 40px;height: 40px;border-radius:50%;">
+                        </a>
+                      </li>
+                      <li class="background__items">
+                        <a class="background__link" href="#">
+                          <span class="background__more">
+                            71+
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="background__similar">
+                  <div class="background__profi">
+                    <span class="background__count">67</span>
+                    <p class="background__proffession">
+                      Web development
+                    </p>
+                  </div>
+                  <div class="background__avatars">
+                    <ul class="background__list">
+                      <li class="background__items">
+                        <a class="background__link" href="#">
+                          <img src="./img/avatar2.jpg" alt="avatar" style="width: 40px;height: 40px;border-radius:50%;">
+                        </a>
+                      </li>
+                      <li class="background__items">
+                        <a class="background__link" href="#">
+                          <img src="./img/avatar3.jpg" alt="avatar" style="width: 40px;height: 40px;border-radius:50%;">
+                        </a>
+                      </li>
+                      <li class="background__items">
+                        <a class="background__link" href="#">
+                          <img src="./img/avatar.jpg" alt="avatar" style="width: 40px;height: 40px;border-radius:50%;">
+                        </a>
+                      </li>
+                      <li class="background__items">
+                        <a class="background__link background__link--text" href="#">
+                          <span class="background__more">
+                            17+
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="background__interests">
+            <h3 class="background__title">
+              <span class="background__star material-icons">
+                star
+              </span> Interests
+            </h3>
+          </div>
+          <ul class="background__listed">
+            <li class="background__item">
+              Wireless industry
+            </li>
+            <li class="background__item">
+              Photography
+            </li>
+            <li class="background__item">
+              Web design
+            </li>
+            <li class="background__item">
+              Technology
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container__recomendations recomendations" id="recomendations">
+        <div class="recomendations__header">
+          <h2 class="recomendations__head">Recommendations</h2>
+          <div class="recomendations__navigator">
+            <div class="recomendations__img">
+              <span class="material-icons">
+                arrow_back_ios
+              </span>
+            </div>
+            <div class="recomendations__img">
+              <span class="material-icons">
+                arrow_forward_ios
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="recomendations__line"></div>
+        <div class="recomendations__content">
+          <ul class="recomendations__list">
+            <li class="recomendations__items">
+              <p class="recomendations__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique non hic molestias est magnam veniam
+                aliquam. Tenetur, voluptas illum!
+              </p>
+              <span class="recomendations__triangle">
+
+              </span>
+              <div class="recomendations__authors">
+                <div class="recomendations__avatar">
+                  <img src="./img/avatar.jpg" alt="avatar" style="width: 40px;height: 40px;border-radius:50%;">
+                </div>
+                <div class="recomendations__status">
+                  <h4 class="recomendations__name">
+                    Steve Jobs
+                  </h4>
+                  <p class="recomendations__company">
+                    Apple
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="recomendations__items">
+              <p class="recomendations__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique non hic molestias est magnam veniam
+                aliquam. Tenetur, voluptas illum!
+              </p>
+              <span class="recomendations__triangle">
+
+              </span>
+              <div class="recomendations__authors">
+                <div class="recomendations__avatar">
+                  <img src="./img/avatar2.jpg" alt="avatar" style="width: 40px;height: 40px;border-radius:50%;">
+                </div>
+                <div class="recomendations__status">
+                  <h4 class="recomendations__name">
+                    Mark Zuckerberg
+                  </h4>
+                  <p class="recomendations__company">
+                    Facebook
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="recomendations__items">
+              <p class="recomendations__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique non hic molestias est magnam veniam
+                aliquam. Tenetur, voluptas illum!
+              </p>
+              <span class="recomendations__triangle">
+
+              </span>
+              <div class="recomendations__authors">
+                <div class="recomendations__avatar">
+                  <img src="./img/avatar3.jpg" alt="avatar" style="width: 40px;height: 40px;border-radius:50%;">
+                </div>
+                <div class="recomendations__status">
+                  <h4 class="recomendations__name">
+                    Jeffrey Bezos
+                  </h4>
+                  <p class="recomendations__company">
+                    Amazon
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="container__following following" id="following">
+        <div class="following__header">
+          <h2 class="following__head">
+            following
+          </h2>
+        </div>
+        <div class="following__line"></div>
+        <div class="following__content">
+          <ul class="following__list">
+            <li class="following__items">
+              <div class="following__border">
+                <img class="following__img" src="./img/logo-microsoft.png" alt="Microsoft logo"
+                  style="width: 70px;height: auto;">
+              </div>
+              <p class="following__company">Microsoft</p>
+              <a class="following__link" href="#">
+                <span class="following__icon material-icons">
+                  add_circle_outline
+                </span> Follow
+              </a>
+            </li>
+            <li class="following__items">
+              <div class="following__border">
+                <img class="following__img" src="./img/logo-amazon.jpg" alt="Amazon logo"
+                  style="width: 85px;height: auto;">
+              </div>
+              <p class="following__company">Amazon</p>
+              <a class="following__link" href="#">
+                <span class="following__icon material-icons">
+                  add_circle_outline
+                </span> Follow
+              </a>
+            </li>
+            <li class="following__items">
+              <div class="following__border">
+                <img class="following__img" src="./img/logo-microsoft.png" alt="Microsoft logo"
+                  style="width: 70px;height: auto;">
+              </div>
+              <p class="following__company">Microsoft</p>
+              <a class="following__link" href="#">
+                <span class="following__icon material-icons">
+                  add_circle_outline
+                </span> Follow
+              </a>
+            </li>
+            <li class="following__items">
+              <div class="following__border">
+                <img class="following__img" src="./img/logo-amazon.jpg" alt="Amazon logo"
+                  style="width: 85px;height: auto;">
+              </div>
+              <p class="following__company">Amazon</p>
+              <a class="following__link" href="#">
+                <span class="following__icon material-icons">
+                  add_circle_outline
+                </span> Follow
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="following__button" href="#">See all (20)</a>
+      </div>
+
+    </section>
+    <section class="main__people people">
+      <div class="people__block">
+        <p class="people__title">People also viewed</p>
+        <ul class="people__list">
+          <li class="people__items">
+            <a class="people__link" href="#">
+              <img class="people__avatar" src="./img/avatar.jpg" alt="avatar"
+                style="width: 40px;height:40px;border-radius:50%;">
+              <p class="people__company">
+                <span class="people__name">
+                  Sergey Brin
+                </span>
+                Google
+              </p>
+            </a>
+          </li>
+          <li class="people__items">
+            <a class="people__link" href="#">
+              <img class="people__avatar" src="./img/avatar2.jpg" alt="avatar"
+                style="width: 40px;height:40px;border-radius:50%;">
+
+              <p class="people__company">
+                <span class="people__name"> Jeffrey Bezos</span>
+                Amazon
+              </p>
+            </a>
+          </li>
+          <li class="people__items">
+            <a class="people__link" href="#">
+              <img class="people__avatar" src="./img/avatar3.jpg" alt="avatar"
+                style="width: 40px;height:40px;border-radius:50%;">
+              <p class="people__company">
+                <span class="people__name">Steve Jobs</span>
+                <br>
+                Apple
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="people__more more">
+        <p class="people__title">more influencers</p>
+        <div class="more__block">
+          <span class="more__img material-icons">
+            arrow_back_ios
+          </span>
+          <img class="more__avatar" src="./img/avatar3.jpg" alt="avatar"
+            style="width: 100px;height: 100px;border-radius:50%;display: block;">
+          <span class="more__img material-icons">
+            arrow_forward_ios
+          </span>
+        </div>
+        <h3 class="more__head">
+          Steve Jobs
+        </h3>
+        <p class="more__company">Apple</p>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copy">Linkedin Corporation &copy; 2014</p>
+  </footer>
+</body>
+
+</html>

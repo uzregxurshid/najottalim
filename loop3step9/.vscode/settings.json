@@ -1,0 +1,14 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath":"/"
+    }
+  ],
+  "liveSassCompile.settings.autoprefix": [
+    "last 4 versions",
+    "ie >= 9",
+    "> 5%"
+  ],
+}

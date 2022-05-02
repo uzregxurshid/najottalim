@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+  width: 1350px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url("../images/bground.jpg");
+  background-size: cover;
+}
+
+.header-top {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+.header-list {
+  display: flex;
+}
+
+
+.active {
+  text-decoration: underline;
+}
+
+.header-items a {
+  color: #fff;
+padding-left: 40px;
+}
+
+.header-welcome {
+  margin-top: 70px;
+  display: block;
+  color: #fff;
+  text-align: left;
+  width: 443px;
+  margin-left: 120px;
+}
+
+.welcome {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.welcome-lorem {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.header-button {
+  width: 120px;
+  margin-top: 20px;
+  background: #52AADB;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+}
+
+.down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.down-link {
+  padding: 30px;
+}
+
+
+.course-head {
+  margin: 50px auto;
+  background: 41px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+  color: #000000;
+}
+
+.course-list {
+width: 1100px;
+margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.course-items {
+  background: #F5F5F5;
+  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px #C5C5C5;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 400px;
+  height: 530px;
+}
+
+.course-items:hover {
+  background: #EAEAEA;
+  box-shadow: none;
+}
+
+.course-items:nth-child(2n) {
+  margin-left: 40px;
+}
+
+.list-head {
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 39px;
+  line-height: 41px;
+  color: #000000;
+}
+
+.list-lorem {
+  margin-top: 20px;
+  width: 320px;
+  text-align: justify;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+.teacher {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.teacher-head {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 39px;
+  line-height: 72px;
+  color: #000000;
+  margin: 100px auto 30px auto;
+
+}
+
+.teacher-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px 150px;
+}
+
+.teacher-items {
+  margin-left: 41px;
+  text-align: center;
+}
+
+.teacher-img {
+  border-radius: 50%;
+}
+
+.teacher-img:hover {
+  box-shadow: 0px 0px 5px 2px #e2dfdf, 10px 0px 10px 4px #6e6969;
+}
+
+.maps {
+  margin-top: 120px;
+}
+
+#map {
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #C5C5C5;
+}
+
+figcaption {
+  color: #fff;
+  width: 350px;
+  display: block;
+  height: 50px;
+  background: aqua;
+  margin-bottom: -40px;
+}
+.kurslarimiz{
+  width:650px;
+  margin: 70px auto;
+  font-style: normal;
+font-weight: normal;
+font-size: 41px;
+line-height: 72px;
+text-align: center;
+color: #000000;
+}
+.phonee{
+  margin: 0 auto;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+background: #F1F1F1;
+box-shadow: -6px -6px 10px #FFFFFF, 6px 6px 10px #CACACA;
+border-radius: 15px;
+}
+.phonee:hover{
+  background:#EAEAEA;
+  box-shadow: none;
+}
+.telephone{
+  font-style: normal;
+font-weight: normal;
+font-size: 41px;
+line-height: 65px;
+color: #FFB800;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+  width:1300px;
+  margin: 0 auto;
+}
+.left{
+  margin-left: 100px;
+
+}
+.logof{
+  width:130px;
+  height: auto;
+}
+.loreem{
+  width: 400px;
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+
+color: #000000;
+}
+.copyy{
+  font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+margin-top:15px;
+margin-bottom: 10px;
+color: #C7C7C7;
+}
+.right{
+  margin-right: 100px;
+  display: flex;
+}
+.right1{
+  margin-right: 100px;
+}
+
+.labout li a{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+}
+.labout li{
+  padding-top: 17px;
+}
+

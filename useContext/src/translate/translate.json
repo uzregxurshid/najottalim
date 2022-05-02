@@ -1,0 +1,42 @@
+{
+  "document": {
+    "body": {
+      "form":{
+        "uz": {
+          "email": {
+            "label": "Email manzilingiz",
+            "placeholder": "Emailingizni kiriting",
+            "security": "Hech qachon 3-shaxsga emailingiz berilmaydi!"
+          },
+          "password": {
+            "label": "Parolingiz",
+            "placeholder": "Parolingizni kiriting"
+          },
+          "checkbox": {
+            "label": "Eslab qolish"
+          },
+          "button": {
+            "value": "Kirish"
+          }
+        },
+        "en": {
+          "email": {
+            "label": "Email address",
+            "placeholder": "Enter email",
+            "security": "We'll never share your email with anyone else."
+          },
+          "password": {
+            "label": "Password",
+            "placeholder": "Password"
+          },
+          "checkbox": {
+            "label": "Keep sign in"
+          },
+          "button": {
+            "value": "Log In"
+          }
+        }
+      }
+    }
+  }
+}

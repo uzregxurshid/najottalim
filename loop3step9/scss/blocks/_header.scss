@@ -1,0 +1,107 @@
+.header {
+  width: 100%;
+  height: 170px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/background.jpg");
+  background-size: cover;
+  background-position: 0 -180px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 20px 20px 25px 20px;
+  justify-content: space-between;
+}
+
+.header {
+  &__left {
+    display: flex;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    align-items: flex-end;
+  }
+
+  &__degree {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+
+  &__icons {
+    font-size: 30px;
+  }
+
+  &__items {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__items~&__items {
+    margin-left: 28px;
+  }
+
+  &__items--first &__day {
+    display: none;
+  }
+
+  
+
+  &__items--first {
+    font-size: 40px;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__date {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  &__weekday {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__month {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__clock {
+    font-size: 50px;
+    line-height: 0.9;
+    margin-left: 30px;
+    margin-right: 10px;
+  
+  }
+
+  &__amp {
+    text-transform: uppercase;
+  }
+  &__anim{
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    animation-name:rotating;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+  }
+}
+.blue-line{
+  position: absolute;
+  width: 150px;
+  height: 4px;
+  background-color:#a4c3f2; 
+  transform:translate(310px,286px);
+}

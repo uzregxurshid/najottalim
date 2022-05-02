@@ -1,0 +1,164 @@
+.top {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 13px;
+  padding-top: 30px;
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+}
+
+.top {
+  &__list {
+    display: flex;
+    margin-left: 40px;
+    font-size: 18px;
+    list-style-type: none;
+  }
+
+  &__items~&__items {
+    margin-left: 25px;
+  }
+
+  &__list a {
+    text-decoration: none;
+    color: #b3b3b3;
+  }
+
+  &__list a:hover {
+    color: #000;
+    transition: .4s;
+  }
+
+  &__items--active a {
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+  }
+
+  &__icons {
+    color: #a4c3f2;
+  }
+
+  &__lists {
+    display: flex;
+    margin-left: 18px;
+    list-style-type: none;
+  }
+
+  &__items {
+    margin-left: 0;
+  }
+
+  &__movie {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__movies {
+    text-decoration: none;
+  }
+
+  &__item {
+    width: 160px;
+  }
+
+  &__movies img {
+    width: 160px;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    filter: brightness(0.7);
+    -webkit-box-shadow: 0px 13px 29px 0px rgba(153, 153, 153, 0.63);
+    box-shadow: 0px 13px 29px 0px rgba(153, 153, 153, 0.63);
+  }
+
+
+  &__time {
+    color: #b3b3b3;
+    white-space: nowrap;
+    line-height: 1.5;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  &__name {
+    color: #000;
+    font-size: 15px;
+    white-space: nowrap;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+
+  &__icons {
+    font-style: 30px;
+    margin-top: -15px;
+
+  }
+
+  &__list {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  &__effect {
+    transform: scale(1.2);
+    transition: .7s;
+    z-index: 1;
+  }
+
+  &__effects {
+    animation: scaling;
+    animation-duration: 1s;
+  }
+
+  &__item:nth-child(1) &__movies &__effects {
+    animation-delay: 1s;
+  }
+
+  &__item:nth-child(4) &__movies &__effects {
+    animation-delay: 4s;
+  }
+
+  &__item:nth-child(3) &__movies &__effects {
+    animation-delay: 3s;
+  }
+
+  &__item:nth-child(2) &__movies &__effects {
+    animation-delay: 2s;
+  }
+
+  &__item:nth-child(5) &__movies &__effects {
+    animation-delay: 5s;
+  }
+
+  &__effects {
+    position: relative;
+  }
+
+  &__special::before {
+    background: url("./img/play.svg");
+    background-size: 40px 40px;
+    margin-top: -85px;
+    margin-left: 50px;
+    filter: invert(1);
+    width: 40px;
+    display: none;
+    height: 40px;
+    content: "";
+    position: absolute;
+    z-index: 12;
+  }
+
+  &__effects:hover+&__special::before {
+    display: inline-block;
+  }
+
+  &__effects:hover {
+    filter: brightness(0.3);
+  }
+
+}
