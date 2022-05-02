@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/kirish.css">
+	<link rel="stylesheet" href="css/content.css">
+	<link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+	<div id="diniy">
+		<div style="position: relative;" class="container-fluid page-content p-0">
+			<!-- page qism chap tomoni -->
+			<div class="page-content-left pb-4"  :style='styleLeft'>
+				<span class="angleSpan" @click='leftClick'><i :style='angleStyle' class="fas fa-angle-double-right"></i></span>
+				<div class="page-content-left-name pl-4">
+					<div :class='pagesList' class="page-content-left-name-body">
+						<div :class='burgerChangeStyle' @click='burgerChange'>
+							<span class="hr"></span>
+							<span class="hr"></span>
+							<span class="hr"></span>
+						</div>
+						<h4 class="pl-3 text-white">DINIY</h4>
+					</div>
+				</div>
+				<div :style='pageListSectionStyle' class="m-0 pl-4 pb-4 pageListSection">
+					<h5 class=" text-white"><a href="dunyoviy.html">DUNYOVIY</a></h5>
+					<h5 class=" text-white"><a href="diniy.html">DINIY</a></h5>
+				</div>
+				<div class="page-content-left-section-border">
+					<div class="page-content-left-section-1 px-4 mt-5">
+						<h5>Yangi Nashrlar</h5>
+						<div class="page-content-left-book-section mt-3">
+							<img src="images/BU-YERDA-KITOB.jpg" alt="">
+							<div class="page-content-left-book-section-text ml-2">
+								<h5>Kitobning To'liq Nomi</h5>
+								<h5>Kitob Mualliflari</h5>
+								<h5>narhi</h5>
+							</div>
+						</div>
+						<div class="page-content-left-book-section mt-3">
+							<img src="images/BU-YERDA-KITOB.jpg" alt="">
+							<div class="page-content-left-book-section-text ml-2">
+								<h5>Kitobning To'liq Nomi</h5>
+								<h5>Kitob Mualliflari</h5>
+								<h5>narhi</h5>
+							</div>
+						</div>
+						<div class="page-content-left-book-section mt-3">
+							<img src="images/BU-YERDA-KITOB.jpg" alt="">
+							<div class="page-content-left-book-section-text ml-2">
+								<h5>Kitobning To'liq Nomi</h5>
+								<h5>Kitob Mualliflari</h5>
+								<h5>narhi</h5>
+							</div>
+						</div>
+					</div>
+					<div class="page-content-left-section-1 px-4 mt-5">
+						<h5>Eng Ko'p Sotuvda</h5>
+						<div class="page-content-left-book-section mt-3">
+							<img src="images/BU-YERDA-KITOB.jpg" alt="">
+							<div class="page-content-left-book-section-text ml-2">
+								<h5>Kitobning To'liq Nomi</h5>
+								<h5>Kitob Mualliflari</h5>
+								<h5>narhi</h5>
+							</div>
+						</div>
+						<div class="page-content-left-book-section mt-3">
+							<img src="images/BU-YERDA-KITOB.jpg" alt="">
+							<div class="page-content-left-book-section-text ml-2">
+								<h5>Kitobning To'liq Nomi</h5>
+								<h5>Kitob Mualliflari</h5>
+								<h5>narhi</h5>
+							</div>
+						</div>
+						<div class="page-content-left-book-section mt-3">
+							<img src="images/BU-YERDA-KITOB.jpg" alt="">
+							<div class="page-content-left-book-section-text ml-2">
+								<h5>Kitobning To'liq Nomi</h5>
+								<h5>Kitob Mualliflari</h5>
+								<h5>narhi</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- page page asosiy tana qismi -->
+			<div class="page-content-body"  style="background-color: #ecf6ff">
+				<div class="page-content-top">
+					<div class="search-input-page-icon mx-4">
+						<button type="submit" :style='searchButtonStyle'>
+							<i :style='searchButtonStyle' class="fas fa-search"></i>
+						</button>
+						<input type="search" class="search-input-page py-1 px-2" @focus='inputin' @blur='inputout(event)'>
+					</div>
+				</div>
+				<div class="page-content-content pt-5 px-4 pb-4">
+					<h1 class="m-0" style="font-size: 30px">Biz tavsiya qilamiz</h1>
+					<div id="recommend" class=" page-content-content-recommend mt-3">
+						<img src="images/BU-YERDA-KITOB.jpg" alt="">
+						<div class=" page-content-content-recommend-body">
+							<h2 style="font-size: 30px">Kitobning To'liq Nomi</h2>
+							<h5 style="color: #ff5966">Kitob Muallifi</h5>
+							<div class="py-2 recommend-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<h6>QANDAY QOPLAMLI</h6>
+							<h6 class="recommend-body-aboute-max">
+								Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Et porro non, perferendis maxime eaque nam mollitia quam beatae culpa, asperiores vel dolorum unde officia praesentium iure eos aliquam, facilis nesciunt quae, voluptatem necessitatibus itaque animi ratione consequatur. Eum totam aut molestiae, veniam, atque dolorem, a mollitia cum asperiores perferendis voluptates ad. Dignissimos quibusdam vitae voluptate sint nulla expedita accusamus eius odio minima.
+								
+							</h6>
+							<h6 class="recommend-body-aboute-min">
+								Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Et porro non, perferendis maxime eaque nam mollitia quam beatae culpa, asperiores vel dolorum unde officia praesentium iure eos aliquam,
+							</h6>
+							<h5>narhi</h5>
+						</div>
+					</div>
+					<div class="page-content-content-books mt-5">
+						<div class="page-content-content-books-card p-3">
+							<img class="mb-2" src="images/BU-YERDA-KITOB.jpg" alt="">
+							<h5>Kitobning To'liq Nomi</h5>
+							<h6>Muallifi</h6>
+							<div class="p1-2 recommend-stars-min">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<h5>narhi</h5>
+						</div>
+						<div class="page-content-content-books-card p-3">
+							<img class="mb-2" src="images/BU-YERDA-KITOB.jpg" alt="">
+							<h5>Kitobning To'liq Nomi</h5>
+							<h6>Muallifi</h6>
+							<div class="p1-2 recommend-stars-min">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<h5>narhi</h5>
+						</div>
+						<div class="page-content-content-books-card p-3">
+							<img class="mb-2" src="images/BU-YERDA-KITOB.jpg" alt="">
+							<h5>Kitobning To'liq Nomi</h5>
+							<h6>Muallifi</h6>
+							<div class="p1-2 recommend-stars-min">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<h5>narhi</h5>
+						</div>
+						<div class="page-content-content-books-card p-3">
+							<img class="mb-2" src="images/BU-YERDA-KITOB.jpg" alt="">
+							<h5>Kitobning To'liq Nomi</h5>
+							<h6>Muallifi</h6>
+							<div class="p1-2 recommend-stars-min">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<h5>narhi</h5>
+						</div>
+						<div class="page-content-content-books-card p-3">
+							<img class="mb-2" src="images/BU-YERDA-KITOB.jpg" alt="">
+							<h5>Kitobning To'liq Nomi</h5>
+							<h6>Muallifi</h6>
+							<div class="p1-2 recommend-stars-min">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<h5>narhi</h5>
+						</div>
+						<div class="page-content-content-books-card p-3">
+							<img class="mb-2" src="images/BU-YERDA-KITOB.jpg" alt="">
+							<h5>Kitobning To'liq Nomi</h5>
+							<h6>Muallifi</h6>
+							<div class="p1-2 recommend-stars-min">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<h5>narhi</h5>
+						</div>
+						<div class="page-content-content-books-card p-3">
+							<img class="mb-2" src="images/BU-YERDA-KITOB.jpg" alt="">
+							<h5>Kitobning To'liq Nomi</h5>
+							<h6>Muallifi</h6>
+							<div class="p1-2 recommend-stars-min">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<h5>narhi</h5>
+						</div>
+						<div class="page-content-content-books-card p-3">
+							<img class="mb-2" src="images/BU-YERDA-KITOB.jpg" alt="">
+							<h5>Kitobning To'liq Nomi</h5>
+							<h6>Muallifi</h6>
+							<div class="p1-2 recommend-stars-min">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<h5>narhi</h5>
+						</div>
+						<div class="page-content-content-books-card p-3">
+							<img class="mb-2" src="images/BU-YERDA-KITOB.jpg" alt="">
+							<h5>Kitobning To'liq Nomi</h5>
+							<h6>Muallifi</h6>
+							<div class="p1-2 recommend-stars-min">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<h5>narhi</h5>
+						</div>
+						<div class="page-content-content-books-card p-3">
+							<img class="mb-2" src="images/BU-YERDA-KITOB.jpg" alt="">
+							<h5>Kitobning To'liq Nomi</h5>
+							<h6>Muallifi</h6>
+							<div class="p1-2 recommend-stars-min">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<h5>narhi</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- page page, pastgi futter qismi -->
+		<!-- <div class="page-bottom bg-dark">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi labore voluptatibus dolore eveniet sed at consequuntur eius totam delectus? Doloremque ipsum tenetur sequi, accusantium quis minus modi dicta tempore obcaecati quam. Voluptate eum corrupti molestiae quod, aut ex accusamus vitae quae quidem optio maxime dolore rerum itaque ab error?
+		</div> -->
+	</div>
+
+	<script src="js/vue.min.js"></script>
+	<script src="js/VueMain.js"></script>
+</body>
+</html>

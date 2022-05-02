@@ -1,0 +1,184 @@
+.direct {
+  &__mega{
+    max-width:100vw;
+    width:100%;
+    background:url("../images/directors/bg.svg") calc(50vw - 820px) 0, url("../images/directors/bgleft.svg") 100% 100%;
+
+    background-repeat:no-repeat;
+  background-color: $deep-jungle-blue;
+  }
+  &__container {
+    padding-top: 140px;
+    padding-bottom: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    @include s48;
+    margin: 0;
+    color: $white;
+  }
+
+  &__list {
+
+    @include list-unstyled;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__items {
+    margin-top: 64px;
+    width: 350px;
+    height: 253px;
+    // position: relative;
+    overflow: hidden;
+    background-color: $sacramento-state-green;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 56px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__avatars {
+    display: block;
+  }
+
+  &__name {
+    @include s18b;
+    color: $rapture-blue;
+    margin: 0;
+    margin-top: 16px;
+  }
+
+  &__position {
+    @include s15;
+    color: $white;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  &__subscribe {
+    cursor: pointer;
+    padding: 0;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 4.5px 18.5px 15.5px 18.5px;
+    text-decoration: none;
+    color: $deep-jungle-blue;
+    border: none;
+    border-radius: 50%;
+    background-color: $light-coral;
+    position: absolute;
+    margin-top: 190px;
+    z-index: 10;
+
+    &:hover {
+      background-color: $rapture-blue;
+      transition: .4s;
+    }
+
+    &:active {
+      background-color: $light-coral;
+      transform: rotate(-45deg);
+      transition: .4s;
+    }
+  }
+
+  &__content {
+    display: flex;
+    background: $sacramento-state-green;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__quota {
+    @include s15;
+    color: $white;
+    text-align: center;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  &__social {
+    display: flex;
+    @include list-unstyled;
+  }
+
+  &__item~&__item {
+    margin-left: 16px;
+  }
+  &__tw{
+    &:hover{
+      fill:$light-coral;
+      transition: .4s;
+    }
+  }
+  &__linkedin{
+    &:hover{
+      fill:$light-coral;
+      transition: .4s;
+    }
+  }
+  @include max(1440px){
+    &__mega{
+      max-width:100%;
+      background:url("../images/directors/bg.svg") calc(-100px) 0, url("../images/directors/bgleft.svg") 100% 100%;
+      background-repeat:no-repeat;
+      background-color: $deep-jungle-blue;
+    }
+  }
+  @include max(1130px){
+    &__container{
+      margin-left: auto;
+      margin-right: auto;
+      max-width:800px;
+    }
+  }
+  
+  @include max(780px){
+    &__title{
+      font-size: 32px;
+      line-height: 32px;
+    }
+    &__container{
+      max-width: 600px;
+    }
+    &__items{
+      width: 281px;
+    }
+  }
+
+  @include max(650px){
+    &__list{
+      flex-direction:column;
+      align-items:center;
+    }
+    &__items{
+      width:327px;
+    }
+  }
+  @include max(500px){
+    &__container{
+      padding-top: 88px;
+      padding-bottom: 116px;
+    }
+    &__mega{
+      background:url("../images/directors/bg.svg") left -100px top -100px, url("../images/directors/bgleft.svg") 100% 100%;
+      background-repeat:no-repeat;
+      background-color: $deep-jungle-blue;
+    }
+  }
+  @include max(360px){
+    &__title{
+      white-space:nowrap;
+    }
+    &__items{
+      width: 281px;
+    }
+  }
+}

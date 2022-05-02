@@ -1,0 +1,48 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  &__list{
+    display:flex;
+    list-style-type: none;
+  }
+
+   &__items ~ &__items{
+    margin-left: 40px;
+  }
+
+  &__links{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    flex: none;
+    opacity:0.7;
+    text-decoration: none;
+    &--active{
+      opacity:1;
+    }
+    &:hover{
+      opacity:1;
+      transition:0.4s;
+    }
+  }
+
+  &__button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#FFFFFF;
+    width: 157px;
+    height: 53px;
+    background: linear-gradient(97.1deg, #3043A9 11.99%, #1F629F 96.6%);
+    border-radius: 28px;
+    &:hover{
+      opacity:0.8;
+      transition:.4s;
+    }
+  }
+}

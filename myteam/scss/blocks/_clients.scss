@@ -1,0 +1,107 @@
+.clients {
+  &__mega{
+    max-width:1440px;
+    width:100%;
+    background: url("../images/clients/bgg.svg") left top;
+    background-color:$sacramento-state-green;
+    background-repeat: no-repeat;
+  }
+  &__container {
+    padding-top: 140px;
+    padding-bottom: 151px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    @include s48;
+    color: $white;
+  }
+
+  &__list {
+    @include list-unstyled;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__items {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size:contain;
+    background:$white;
+    &:nth-child(1) {
+      width:165px;
+      height:28px;
+      mask-image: url("../images/clients/verge.png");
+    }
+    &:nth-child(2){
+      width: 184px;
+      height: 23px;
+      mask-image:url("../images/clients/jakarta.png");
+    }
+    &:nth-child(3){
+      width: 180px;
+      height: 28px;
+      mask-image: url("../images/clients/guardian.png")
+    }
+    &:nth-child(4){
+      width: 165px;
+      height: 28px;
+      mask-image: url("../images/clients/techradar.png")
+    }
+    &:nth-child(5){
+      width: 98px;
+      height: 45px;
+      mask-image:url("../images/clients/gadgets.png");
+    }
+  }
+  @include max(950px){
+    &__items ~ &__items {
+      margin-left: 30px;
+     }
+    &__items{
+      width: auto;
+    }
+  }
+  @include max(850px){
+    &__title{
+      font-size: 32px;
+      line-height: 2;
+      text-align: center;
+    }
+    &__container{
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    &__mega{
+      background-position: left 0 top -100px;
+    }
+    &__list{
+      margin-top: 50px;
+    }
+  }
+  @include max(580px){
+    &__mega {
+      background-position: left -100px top -100px;
+    }
+    &__items ~ &__items{
+      margin-left: 0;
+      margin-top: 56px;
+    }
+    &__items{
+      width: 200px;
+    }
+    &__list{
+      flex-direction: column;
+      align-self: center;
+      }
+  }
+}

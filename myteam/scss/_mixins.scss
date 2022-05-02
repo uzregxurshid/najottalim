@@ -1,0 +1,126 @@
+@mixin list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+//mixin font
+
+@mixin s100 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+}
+
+@mixin s64 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 56px;
+}
+
+@mixin s48 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+@mixin s18b {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@mixin s18n {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@mixin s15 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/*======================*/
+/*    Mixin buttons     */
+/*=======================*/
+@mixin btn($border-color, $border-size, $background-color, $color, $opacity) {
+  border: none;
+  border: $border-size solid $border-color;
+  box-sizing: border-box;
+  border-radius: 24px;
+  @include s18n;
+  padding: 8px 31px 8px 31px;
+  background-color: $background-color;
+  color: $color;
+  transition: .4s;
+  cursor: pointer;
+}
+
+//primarry
+@mixin p-n-st-l {
+  @include btn($white, 2px, transparent, $white, 1);
+
+  &:hover {
+    @include btn($white, 2px, $white, $dark-green, 1);
+  }
+
+  &--disabled {
+    @include btn($white, 2px, transparent, $white, 1);
+    filter: grayscale(100%) opacity(0.5);
+  }
+}
+
+@mixin p-n-st-d {
+  @include btn($sacramento-state-green, 2px, transparent, $sacramento-state-green, 1);
+
+  &:hover {
+    @include btn($sacramento-state-green, 2px, $sacramento-state-green, $white, 1);
+  }
+
+  &--disabled {
+    @include btn($sacramento-state-green, 2px, transparent, $sacramento-state-green, 1);
+    filter: grayscale(100%) opacity(0.5);
+  }
+}
+
+//secondary
+
+@mixin s-n-st-l {
+  @include btn($white, 2px, $white, $dark-green, 1);
+
+  &:hover {
+    @include btn($white, 2px, $white, $dark-green, 1);
+    filter: opacity(0.5);
+  }
+
+  &--disabled {
+    @include btn($white, 2px, $white, transparent, 1);
+    filter: grayscale(100%) opacity(0.5);
+  }
+}
+
+@mixin min($width) {
+  @media only screen and(min-width:$width) {
+    @content;
+  }
+}
+
+@mixin max($width) {
+  @media only screen and(max-width:$width) {
+    @content;
+  }
+}
+
+@mixin between($min,$max){
+  @media only screen and(min-width:$min) and (max-width:$max) {
+    @content;
+  }
+}

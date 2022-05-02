@@ -1,0 +1,66 @@
+.nutrition {
+  margin-top: 100px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__img {
+    width: 605px;
+    height: 484px;
+  }
+
+  &__right {
+    width: 445px;
+    padding-top: 75px;
+  }
+
+  &__text {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #222222;
+  }
+
+  &__header {
+    margin: 0;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #161D2F;
+  }
+
+  &__content {
+    font-style: normal;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #222222;
+  }
+  &__btn {
+    background: linear-gradient(97.1deg, #3043A9 11.99%, #1F629F 96.6%);
+
+    margin-top: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    color: #FFFFFF;
+    width: 157px;
+    height: 53px;
+    border-radius: 28px;
+    &:hover{
+      opacity:0.8;
+      transition:.4s;
+    }
+  }
+}

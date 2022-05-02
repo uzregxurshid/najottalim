@@ -1,0 +1,145 @@
+.header {
+  padding-top: 73px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link,
+  &__links {
+    display: inline-block;
+  }
+
+  &__links {
+    @include s18n;
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+      color: $light-coral;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__items~&__items {
+    margin-left: 40px;
+  }
+
+  &__items:first-child {
+    margin-left: 80.05px;
+  }
+
+  &__navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  img {
+    display: block;
+  }
+  &__closer{
+    @include s18b;
+    color:$white;
+    display: none;
+  }
+  &__list {
+    display: flex;
+    @include list-unstyled;
+  }
+
+  &__button {
+    @include p-n-st-l;
+  }
+
+  &__toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  @include max(768px) {
+    &__header {
+      padding-top: 64px;
+    }
+
+    &__img {
+      width: 130px;
+      height: 32px;
+    }
+
+    &__links {
+      @include s18n;
+    }
+  }
+
+  @include max(600px) {
+    &__toggle {
+      display: inline-block;
+    }
+
+    &__navbar {
+      transition:.4s ease-in-out;
+      display:none;
+      padding-left:50px;
+      padding-top:100px;
+      position: absolute;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 68%;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      background: url("../images/header/bg.svg") 100% 100%;
+      background-color: $police-blue;
+      background-repeat: no-repeat;
+    }
+
+    &__list {
+      margin: 0;
+      flex-direction: column;
+    }
+
+    &__items~&__items {
+      margin: 0;
+      margin-top: 24px;
+    }
+
+    &__items:first-child {
+      margin: 0;
+    }
+
+    &__button {
+      margin-top: 24px;
+    }
+    &__closer{
+      display: block;
+      border:none;
+      background:transparent;
+      cursor:pointer;
+      position: absolute;
+      top:48px;
+      right:30px;
+      z-index:10;
+    }
+  }
+  @include max(425px){
+    padding-top: 48px;
+  }
+  @include max(375px){
+    &__img{
+      width: 128px;
+      height: 32px;
+    }
+    
+  }
+}

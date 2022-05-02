@@ -1,0 +1,160 @@
+.build {
+  background: url("../images/build/bg.svg") calc(50% + 710px) 100%;
+  background-color: $sacramento-state-green;
+  background-repeat: no-repeat;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 198px;
+    padding-bottom: 140px;
+  }
+
+  &__title {
+    @include s48;
+    color: $white;
+  }
+
+  &__line {
+    border-top: 4px solid $light-coral;
+    padding-top: 100px;
+  }
+
+  &__left {
+    width: 445px;
+  }
+
+  &__right {
+    width: 540px;
+  }
+
+  &__list {
+    @include list-unstyled;
+  }
+
+  &__items {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  &__content {
+    margin-left: 23px;
+  }
+
+  &__light {
+    @include s18b;
+    color: $light-coral;
+  }
+
+  &__define {
+    @include s15;
+    color: $white;
+  }
+
+  @include max(1350px) {
+    background: $sacramento-state-green;
+
+    &__mega {
+      max-width: 100vw;
+      width: 100%;
+      background: url("../images/build/bg.svg") calc(100% + 100px) 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include max(1060px) {
+    &__right {
+      width: 450px;
+    }
+  }
+
+  @include max(970px) {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__left {
+      width: 573px;
+    }
+
+    &__right {
+      width: 573px;
+    }
+  }
+
+  @include max(768px) {
+    &__container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    &__left {
+      width: 445px;
+      margin-left: -110px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    &__line {
+      padding-top: 32px;
+    }
+  }
+
+  @include max(650px) {
+    &__left {
+      width: 320px;
+    }
+
+    &__right {
+      width: 420px;
+    }
+  }
+
+
+  @include max(475px) {
+    &__left {
+      width: 240px;
+      padding-left: 20px;
+    }
+
+    &__right {
+      width: 327px;
+    }
+
+    &__items {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__light {
+      text-align: center;
+    }
+
+    &__define {
+      text-align: center;
+    }
+  }
+
+  @include max(350px) {
+    &__left {
+      width: 170px;
+    }
+
+    &__title {
+      font-size: 23px;
+    }
+
+    &__right {
+      width: 270px;
+    }
+
+    &__content {
+      margin-left: 0;
+    }
+  }
+}

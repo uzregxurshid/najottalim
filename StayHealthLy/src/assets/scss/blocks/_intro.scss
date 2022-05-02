@@ -1,0 +1,99 @@
+.intro {
+  margin-top: 67px;
+  padding-bottom: 50px;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__header {
+    margin: 0;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__mot {
+    margin: 0;
+    margin-top: 20px;
+    width: 690px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    color: #FFFFFF;
+    width: 157px;
+    height: 53px;
+    border-radius: 28px;
+    &:hover{
+      opacity:0.8;
+      transition:.4s;
+    }
+    &--join {
+      background: linear-gradient(97.1deg, #3043A9 11.99%, #1F629F 96.6%);
+     
+    }
+
+    &--contact {
+      border: 1px solid #FFFFFF;
+      margin-left: 20px;
+    }
+  }
+  &__vid{
+    margin-top: 30px;
+    position: relative;
+    &::after{
+      background-image: url('../../img/play.svg');
+      background-size: 100px 100px;
+     display: inline-block;
+      position: absolute;
+      z-index:1;
+      left:44%;
+      top: 40%;
+      width: 100px; 
+      height: 100px;
+      color:#FFFFFF;
+      cursor: pointer;
+      content:"";
+    }
+  }
+
+  &__image{
+    border-radius:10px;
+    z-index: 0;
+  }
+}

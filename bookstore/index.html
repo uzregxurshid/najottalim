@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/kirish.css">
+	<link rel="stylesheet" href="css/content.css">
+	<link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+	<!-- kirish qismi -->
+	<div id="app">
+		<div class="kirish container-fluid" v-show='appShow'>
+			<section class="kirish-left" @click='bosishDunyoviy'>
+				<div class="card-fon">
+					<h1 style="font-family: poppins, sans-serif;">DUNYOVIY</h1>
+				</div>
+				<img src="images/annur_logo_png_white.png" class="logo-left" alt="">
+				<div id="bg-cosmo" class="cosmo"></div>
+			</section>
+			<section class="kirish-right" @click='bosishDiniy'>
+				<div class="card-fon">
+					<h1 style="font-family: poppins, sans-serif;">DINIY</h1>
+				</div>
+				<img src="images/annur_logo_png.png" class="logo-right" alt="">
+				<div id="bg-cosmo-white" class="cosmo"></div>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/particles.min.js"></script>
+	<script src="js/vue.min.js"></script>
+	<script src="js/VueMain.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Directory.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-by-Moorcam.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <section class="shadow contact-clean" style="background: rgb(3,77,139);">
+        <form class="bg-light border rounded border-secondary shadow-lg form" method="post"
+            style="background: rgb(248,248,249);">
+            <h2 class="text-center">Contact us</h2>
+            <div class="form-group mb-3">
+                <input class="form-control name" type="text" name="name" placeholder="Name" required="required">
+            </div>
+            <div class="form-group mb-3">
+                <input class="form-control phone" type="text" name="phone" placeholder="Phone" inputmode="tel" required="required">
+            </div>
+            <div class="form-group mb-3">
+                <input type="text" class="form-control location" name="location" placeholder="Location"  required="required"/>
+            </div>
+            <div class="form-group mb-3">
+                <select class="form-select gender" required="required">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    </optgroup>
+                </select>
+            </div>
+            <select class="form-select relation" required="required">
+                <option value="Family" selected>Family</option>
+                <option value="Friend">Friend</option>
+                </optgroup>
+            </select>
+            <div class="form-group mb-3"><button class="btn btn-primary" type="submit">send </button></div>
+        </form>
+        <div class="container mt-3">
+            <div class="row contactlist" >
+                
+            </div>
+            <!-- end row -->
+        </div>
+    </section>
+
+    <template id="card">
+        <div class="col-lg-2">
+            <div class="card m-b-30">
+                <div class="card-body">
+                    <div class="media">
+                        <img class="d-flex mr-3 rounded-circle img-thumbnail thumb-lg avatar"
+                            src=""
+                            alt="Generic placeholder image" />
+                        <div class="media-body">
+                            <h5 class="mt-0 font-18 mb-1 card-name"></h5>
+                            <p class="text-muted font-14 mb-0 card-family"></p>
+                            <p class="text-muted font-14 mylocation mb-0"></p>
+                            <ul class="social-links list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a title="" data-placement="top" data-toggle="tooltip" class="tooltips"
+                                        href="" data-original-title="1234567890"><i class="fa fa-phone"></i></a>
+                                   <span class="number"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </template>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
