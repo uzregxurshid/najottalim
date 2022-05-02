@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+</head>
+<style>
+  .form-check-input:checked + .form-check-label {
+    text-decoration: line-through !important;
+    color: #dc3545 !important;
+  }
+</style>
+<body>
+  <div class="container d-flex justify-content-center flex-column align-items-center">
+    <div class="h1 mt-3">Bozorlik</div>
+    <form action="https://echo.htmlacademy.ru" method="post" class="form-control form">
+
+    <div class="mb-3">
+      <label for="product" class="form-label">Masalliqni kiriting: </label>
+      <input type="text" class="product-input form-control" name="product" id="product" aria-describedby="helpId" placeholder="Olma uzum" autocomplete="off" required="required">
+      <small id="helpId" class="form-text text-muted">Olma, anor, pomidor</small>
+    </div>
+    
+    <div class="mb-3">
+      <button type="submit" name="add" id="add" class="btn btn-primary">Qo'shish</button>
+    </div>
+    <div class="mb-3">
+      <button type="button" name="add" id="add" class="delete btn btn-danger">O'chirish</button>
+    </div>
+    <div class="mb-3">
+      <label for="search" class="form-label">Nimani qidirmoqchisiz</label>
+      <input type="text" class="product-search form-control" name="search" id="search" aria-describedby="helpId" placeholder="Olma uzum" autocomplete="off">
+      <small id="helpId" class="form-text text-muted">Olma, anor, pomidor</small>
+    </div>
+    
+    <div class="mb-3">
+      <button type="button" name="add" id="add" class="search btn btn-success">Qidirish</button>
+    </div>
+
+    <div class="yesno p-3 bg-success bg-opacity-25 rounded mb-3">
+
+
+    </div>
+
+    <div class="outputing p-3 bg-primary bg-opacity-25 rounded">
+      
+   
+
+    </div>
+    
+  </form>
+
+  </div>
+
+
+  <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
