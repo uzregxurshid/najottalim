@@ -1,0 +1,171 @@
+.video {
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  margin-top: 10px;
+  overflow-y: scroll;
+  height: 90vh;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__toggle {
+    display: flex;
+    align-items: center;
+    width: 20vw;
+
+    &--header {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 45px;
+      color: #FFFFFF;
+      margin: 0;
+    }
+
+    &--text {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #fff;
+      margin-left: auto;
+      margin-right: 11px;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    height: 95vh;
+    padding-bottom:50px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+
+    &--left {
+      display: flex;
+    }
+  }
+
+  &__image {
+    margin-right: 12px;
+  }
+
+  &__channelinfo {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.6);
+    mix-blend-mode: normal;
+    width: 820px;
+  }
+
+  &__channelname {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    color: #FFFFFF;
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  &__release {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.41);
+    mix-blend-mode: normal;
+    margin-bottom: 14px;
+  }
+
+  &__showmore {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.4);
+    mix-blend-mode: normal;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-top: 15px;
+    padding-bottom: 48px;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+
+  &__like {
+    &--margin{
+      display: inline-block;
+      margin-left:8px;
+    }
+    &--content {
+      margin-top: 14px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--left {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      color: #C2C2C2;
+    }
+
+    &--right {
+      display: flex;
+    }
+
+    &--button {
+      width: 100px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 20px;
+      mix-blend-mode: normal;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    &--moree {
+      border: none;
+      background: transparent;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+
+  }
+}

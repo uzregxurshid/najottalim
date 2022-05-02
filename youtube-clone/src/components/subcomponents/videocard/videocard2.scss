@@ -1,0 +1,49 @@
+.card{
+  &__item {
+    margin-top:23px;
+    &--image {
+      border-radius: 14px;
+    }
+
+    &--video {
+      text-decoration: none;
+    }
+
+    &--title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+
+    &--view, &--date {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 16px;
+      color: #FFFFFF;
+      mix-blend-mode: normal;
+      opacity: 0.4;
+      margin-right: 10px;
+    }
+
+
+    &--channel {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 16px;
+      color: #FFFFFF;
+      mix-blend-mode: normal;
+      opacity: 0.4;
+    }
+
+    &--summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../assets/scss/mixins";
+
+.sidebar {
+  width: 220px;
+  color: #ffffff;
+  max-height: 100%;
+  height: 90vh;
+  overflow-y: scroll;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  &__list, &__sublist {
+    @include list-unstyled;
+  }
+
+  &__sublist {
+    &--item {
+      margin-top: 29px;
+    }
+
+    &--middle {
+      margin-top: 60px;
+    }
+
+    &--bottom {
+      margin-top: 58px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+
+    &--text {
+      margin-left: 13px;
+      @include dark-text-style;
+
+      &--home {
+        color: #FF0000;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__subscriptions {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+
+  &__settings {
+    margin-left: 30px;
+    margin-top: 107px;
+    padding-bottom: 20px;
+  }
+
+}

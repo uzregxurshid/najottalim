@@ -1,0 +1,107 @@
+@import "../../assets/scss/variables.scss";
+@import "../../assets/scss/mixins.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 84px;
+  box-sizing: border-box;
+  padding-left: 32px;
+  padding-right: 70px;
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__hamburger {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-left: 28px;
+
+    &--link {
+      cursor: pointer;
+    }
+
+    &__image {
+      pointer-events: none;
+      width: 300px;
+    }
+  }
+
+  &__search {
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &--input {
+      width: 830px;
+      height: 44px;
+      background: $dark-input-color;
+      mix-blend-mode: normal;
+      border-radius: 22px;
+      padding-left: 23px;
+      border: none;
+      outline: none;
+      @include dark-text-style;
+      opacity: 1;
+
+      &::placeholder {
+        @include dark-text-style;
+      }
+
+      &:focus {
+        border: 1px solid rgb(6, 190, 135);
+        @include dark-text-style;
+        opacity: 1;
+      }
+    }
+
+    &--image {
+      margin-left: -40px;
+      pointer-events: none;
+    }
+  }
+
+
+
+  &__right {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__btn {
+    &--list {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+    }
+
+    &--item {
+      margin-right: 50px;
+    }
+  }
+
+  &__btns {
+    background: transparent;
+    border:none;
+    cursor: pointer;
+  }
+
+  &__avatar{
+    &--button{
+      background-color:transparent;
+      border:none;
+      cursor: pointer;
+    }
+  }
+
+}

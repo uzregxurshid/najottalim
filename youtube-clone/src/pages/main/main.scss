@@ -1,0 +1,77 @@
+@import "../../assets/scss/container";
+@import "../../assets/scss/mixins";
+
+.main {
+  margin-left: 350px;
+  &__container {
+    margin-top: 30px;
+    height:95vh;
+    overflow: scroll;
+    padding-bottom:20px;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+
+  &__top {
+    &--head {
+      display: flex;
+      justify-content: space-between;
+      width:calc(50vw + 500px)
+    }
+  }
+
+  &__channel {
+    &--link {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      margin-right:20px;
+    }
+
+    &--name {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 33px;
+      color: #FFFFFF;
+    }
+
+    &--image{
+      margin-right: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__btngroup {
+    display: flex;
+  }
+
+  &__btn {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  &__list {
+    @include list-unstyled;
+  }
+
+  
+
+  &__item ~ &__item {
+    margin-left: 40px;
+  }
+
+
+}

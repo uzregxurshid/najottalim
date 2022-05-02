@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="loader">
+    <div class="circles">
+      <div class="circle circle1">
+      </div>
+      <div class="circle circle2">
+
+      </div>
+      <div class="circle circle3">
+
+      </div>
+      <div class="circle circle4">
+
+      </div>
+      <div class="circle circle5">
+
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid d-flex justify-content-center flex-column align-items-center">
+    <form class="col-7 align-items-center d-flex mt-3 form" method="get" action="https://echo.htmlacademy.ru">
+      <div class="">
+        <input type="search" class="form-control search" id="exampleInputEmail1" placeholder="Search gif">
+      </div>
+      <div class="">
+        <input type="number" class="mx-2 form-control limit" step="1" min="1" max="100" placeholder="count" required>
+      </div>
+    <div class="ms-3">
+      <select class="form-select select" name="selector" id="endpoint" required="required">
+        <option value="" selected disabled>Choose an endpoint</option>
+        <option value="search">Search</option>
+        <option value="trend">Trending</option>
+        <option value="rand">Random</option>
+      </select>
+    </div>
+     <div class="ms-3">
+      <button type="submit" class="btn btn-primary">Submit</button>
+     </div>  
+    </form>
+
+    <div class="row">
+      <div class="col-12 gifs d-flex flex-wrap mt-3 gifs">
+
+      </div>
+    </div>
+  </div>
+
+  <template id="cards">
+    <div class="m-1">
+      <video class="video" src="" autoplay="on" width="" height="auto" loop></video>
+    </div>
+  </template>
+  <script src="./bootstrap/dist/js/bootstrap.min.js"></script> 
+  <script src="./js/utils.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@import "../../assets/scss/mixins";
+
+.channel {
+  overflow-y: scroll;
+  height:90vh;
+  &::-webkit-scrollbar
+  {
+    display: none;
+  }
+  &__top {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    &--info {
+      display: flex;
+      align-items: center;
+    }
+
+    &--name {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 33px;
+      margin: 0;
+      color: #FFFFFF;
+    }
+
+    &--image {
+      width: 80px;
+      height: 80px;
+      margin-right: 14px;
+    }
+
+    &--subs {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 16px;
+      color: #C2C2C2;
+      margin: 0;
+    }
+  }
+
+  &__right {
+    &--button {
+      width: 154px;
+      height: 40px;
+      background: #FF0000;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &--list {
+      @include list-unstyled;
+      display: flex;
+    }
+
+    &--link {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+      color: #FFFFFF;
+    }
+
+    &--items ~ &--items {
+      margin-left: 69px;
+    }
+
+    &--button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    &--recommended {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #C2C2C2;
+    }
+
+    &--channel {
+      &list {
+        @include list-unstyled;
+        padding-right:20px;
+      }
+
+      &items {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+      }
+
+      &name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        color: #FFFFFF;
+      }
+
+      &image {
+        margin-right: 20px;
+      }
+    }
+
+
+    &--content{
+      display: flex;
+      margin-top:60px;
+
+      &right{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        width:548px;
+        margin-left:32px;
+      }
+
+      &head{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 34px;
+        color: #FFFFFF;
+        margin-bottom:10px;
+        text-decoration: none;
+        margin-bottom:10px;
+        display: inline-block;
+      }
+
+      &text{
+        margin-bottom:30px;
+      }
+    }
+  }
+
+  &__bottom{
+    margin-top:60px;
+    display: flex;
+  }
+  &__list{
+    display: flex;
+    padding-left:0px;
+  }
+
+}

@@ -1,0 +1,20 @@
+@mixin dark-text-color {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+@mixin dark-text-style {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  mix-blend-mode: normal;
+  @include dark-text-color();
+}
+
+@mixin list-unstyled{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
