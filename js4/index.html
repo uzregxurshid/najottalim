@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container d-flex vh-100 align-items-center justify-content-center flex-column">
+    
+    <form class="form-control myform"method="GET" action="https://echo.htmlacademy.ru">
+      <div class="mb-3">
+        <label for="points" class="form-label">To'plagan ballingiz:</label>
+        <input type="text" class="form-control" name="points" id="points" aria-describedby="helpId" placeholder="">
+        <small class="helpId" id="helpId" class="form-text text-muted">Masalan: 0 da 189 gacha</small>
+      </div>
+      <div class="form-check mb-3">
+        <input class="checking" type="checkbox" class="form-check-input" name="checking" id="checking" value="alll">
+        <label class="form-check-label" for="checking">
+          Tanish bilish
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      
+      <div class="bg-light mt-3 text-center result"></div>
+      
+    </form>
+  </div>
+  <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
