@@ -1,0 +1,42 @@
+@mixin button {
+  border: none;
+  background-color: $third-color;
+  background: $gradient;
+  border-radius: 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: 8px 33px 8px 36px;
+  cursor:pointer;
+}
+
+@mixin list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin link {
+  text-decoration: none;
+  display: inline-block;
+}
+@mixin special{
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: -0.28125px;
+color:$first-color;
+}
+@mixin  response ($width) {
+  @media only screen and (max-width:$width) {
+    @content;
+  }
+};
+@mixin between($min,$max){
+  @media only screen and (max-width:$max) and (min-width:$min){
+    @content;
+  }
+}

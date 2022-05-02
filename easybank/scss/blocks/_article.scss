@@ -1,0 +1,118 @@
+.article {
+  background-color: $current-color;
+  margin: 0;
+  padding: 80px 0;
+
+  &__head {
+    margin: 0;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: $second-color;
+  }
+
+  &__list {
+    @include list;
+    display: flex;
+    margin-top: 40px;
+  }
+
+  &__items {
+    width: 255px;
+    background-color: $white;
+  }
+
+  &__block {
+    padding: 24px;
+  }
+
+  &__items~&__items {
+    margin-left: 30px;
+  }
+
+  &__author {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: -0.15625px;
+    color: $first-color;
+    margin-top: 1px;
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.285714px;
+    text-decoration: none;
+    color: $second-color;
+
+    &:hover {
+      color: $third-color;
+      transition: .4s;
+    }
+  }
+
+  &__intro {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.203125px;
+    color: $first-color;
+  }
+
+  @include response(1000px) {
+    &{
+      padding-top: 30px;
+    }
+    &__head {
+      text-align: center;
+    }
+
+    &__list {
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__items {
+      width: 327px;
+      margin: 30px;
+    }
+
+    &__img {
+      width: 327px;
+      height: auto;
+    }
+
+    &__head {
+      font-size: 32px;
+    }
+
+    padding-bottom:30px;
+  }
+
+  @include between(630px, 813px) {
+    &__items {
+      width: 250px;
+    }
+
+    &__img {
+      width: 250px;
+      height: auto;
+    }
+
+    &__container {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.header {
+  &__button {
+    @include button;
+
+    &:hover {
+      opacity: 0.4;
+      transition: .4s;
+    }
+  }
+
+  &__list {
+    @include list;
+    display: flex;
+  }
+
+  &__link {
+    @include link;
+    color: $first-color;
+  }
+
+  &__items~&__items {
+    margin-left: 30px;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__link {
+    padding: 29px 0;
+    border-bottom: 4px solid transparent;
+
+    &:hover {
+      border-bottom: 4px solid $third-color;
+      color: $second-color;
+      transition: .4s;
+    }
+  }
+
+  &__toggle--button {
+    display: none;
+  }
+  &__navbar{
+    display: flex;
+  }
+  background-color:$white;
+
+  @include response(768px) {
+    .container {
+      padding: 0;
+    }
+
+    &__container {
+      justify-content: space-between;
+      height: 64px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__toggle {
+
+      &--button {
+        display: block;
+        width: 35px;
+        height: 30px;
+        position: relative;
+        overflow: hidden;
+        background: transparent;
+        border: none;
+      }
+
+      &--open {
+        position: absolute;
+        width: 65px;
+        height: 18px;
+        transform: scale(2);
+        margin-left:13px;
+        margin-top: -8px;
+        transition:.7s;
+      }
+    }
+
+    &__navbar {
+      display:none;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 100%;
+      top: 64px;
+      right: 0;
+      background: linear-gradient(180deg, rgba(33, 31, 31, 0.73) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &__list {
+      width: 90%;
+      top: 30px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      transform: translate(5%);
+      align-items: center;
+      background-color: $white;
+      flex-direction: column;
+    }
+
+    &__items {
+      margin-left: 10px;
+    }
+    &__items ~ &__items{
+      margin-left: 10px;
+    }
+    
+  }
+}

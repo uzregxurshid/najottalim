@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left, #de6161, #2657eb);
+}
+@media only screen and (max-width: 600px){
+    .container{
+        display:flex;
+       justify-content:center;
+       flex-wrap:wrap;
+    }
+    .block1 input{
+        margin: 0 40px;
+        width:350px;
+        align-items:center;
+        text-align:center;
+    }
+    .blockeq{
+        width:350px;
+        text-align:center;
+    }
+    .block2 input{
+        margin: 0 40px;
+        width:350px;
+        align-items:center;
+        text-align: center;
+    }
+    .block3{
+        margin: 10px 40px;
+        width:350px;
+        align-items:center;
+        text-align:center;
+    }
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transform: translateY(300px);
+}
+
+.block1 input {
+    height: 50px;
+    background-color:rgba(255,255,255,.5);
+    margin-right: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 23px;
+    /* width: 150px; */
+}
+.block1 input:focus{
+    width:250px;
+    background-color:rgba(63, 60, 60,.2);
+    color:#fff;
+    transition:1s;
+}
+.block2 input:focus{
+    width:250px;
+    background-color:rgba(63, 60, 60,.2);
+    color:#fff;
+    transition:1s;
+}
+
+.blockeq i {
+    color: white;
+    font-size: 45px;
+    margin-right: 20px;
+}
+
+.block2 input {
+    height: 50px;
+    background-color:rgba(255,255,255,.5);
+    margin-right: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 23px;
+    /* width: 150px; */
+    overflow: visible;
+}
+
+.block3 select {
+    height: 50px;
+    background-color:rgba(255,255,255,.5);
+    margin-right: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 23px;
+}
+
+option {
+    border-radius: 20px;
+}

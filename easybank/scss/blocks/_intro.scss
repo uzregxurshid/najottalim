@@ -1,0 +1,136 @@
+.intro {
+  width: 100%;
+  background: $current-color;
+
+  &__title {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: $second-color;
+    margin: 0;
+  }
+
+  &__text {
+    margin: 0;
+    @include special;
+    margin-top: 24px;
+  }
+
+  &__button {
+    margin: 0;
+    margin-top: 36px;
+    @include button;
+
+    &:hover {
+      opacity: 0.4;
+      transition: .4s;
+    }
+  }
+
+  &__content {
+    width: 447px;
+
+  }
+
+  &__container {
+    background-color: $current-color;
+    background: url("../images/intro/bgd.svg");
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    padding-top: 170px;
+    padding-bottom: 178px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navbar {
+    display: flex;
+  }
+
+  &__img {
+    margin-top: -170px;
+    pointer-events: none;
+  }
+
+  @include response(1074px) {
+    &__img {
+      display: none;
+    }
+
+    &__container {
+      background: url("../images/intro/hpd.svg"), url("../images/intro/bgd.svg");
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+      background-size: 48%;
+    }
+  }
+
+  @include response(888px) {
+    &___container {
+      flex-direction: column;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__content {
+      width: 350px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+  @include response(768px) {
+    &__container {
+      background-size: 80%;
+      padding-top: 590px;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    &__content {
+      padding-left: 20px;
+    }
+  }
+
+  @include between(656px, 768px) {
+
+    &__container {
+      background-size: 50%;
+      padding-top: 80px;
+    }
+  }
+
+  @include response(656px) {
+    &__container {
+      background-size: 100%;
+      justify-content: center;
+      padding-top: 154%;
+      padding-bottom: 70px;
+    }
+
+    &__content {
+      width: 450px;
+      padding-right: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__text {
+      text-align: center;
+    }
+
+  }
+}
