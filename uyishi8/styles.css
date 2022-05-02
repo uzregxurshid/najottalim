@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body{
+  font-family:'Roboto',Arial, Helvetica, sans-serif;
+  background-color:#4f4f5e;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  background: #fff;
+  width:1000px;
+  height:550px;
+  border-radius:10px;
+  display: flex;
+}
+.left{
+padding-left:41px;
+width: 650px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+a{
+  color:#8e8f9e;
+}
+a:hover{
+  color:#000;
+}
+.member{
+  font-size:37px;
+  line-height:41px;
+  font-weight: normal;
+  color:#000;
+}
+.member-text{
+  color:#b0b4bb;
+  font-size:17px;
+  line-height:23px;
+}
+
+.social{}
+
+.middle{
+  margin-top:-41px;
+}
+.social-items{
+  height:60px;
+  width: 550px;
+  border:1px solid #f3f4f6;
+  margin-top: 20px;
+  border-radius:5px;
+  
+}
+.social-items:hover{
+  border:none;
+  background-color:#fff;
+  box-shadow:0px 6px 6px #f3f4f6,3px 0px 6px #f3f4f6, -3px 0px 6px #f3f4f6;
+
+}
+
+.social-links{
+display: flex;
+  align-items: center;
+text-transform: uppercase;
+font-weight: bold;
+padding:10px;
+}
+.social-img{
+  margin-left: 20px;
+}
+.signup{
+  margin-left: 150px;
+}
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right:20px;
+}
+
+.bottom-email{
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size:16px;
+}
+
+
+
+
+
+
+
+
+
+.right{
+  width:350px;
+  height:550px;
+}
+.sidebar{
+  border-radius:0 10px 10px 0;
+}
