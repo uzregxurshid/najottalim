@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- https://material.io/resources/icons/?style=baseline -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+  <!-- https://material.io/resources/icons/?style=outline -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- https://material.io/resources/icons/?style=round -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+
+  <!-- https://material.io/resources/icons/?style=sharp -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+
+  <!-- https://material.io/resources/icons/?style=twotone -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    @media screen and (min-width:992px) {
+      body {
+        height: 100vh !important;
+        overflow: hidden;
+      }
+
+      .xsz,
+      .xszz {
+        font-size: 35px !important;
+      }
+
+      .myblock {
+        width: 34% !important;
+      }
+
+      .sideblock {
+        width: auto !important;
+      }
+
+      .fblock {
+        position: static !important;
+        background: #293a4c !important;
+        height: 100vh;
+      }
+
+      .zblock {
+        width: 0 !important;
+      }
+
+      .navbar {
+        border: none !important;
+        width: auto !important;
+      }
+
+      .xblock {
+        width: 3%;
+      }
+
+      .xmenu {
+        color: #8091a1 !important;
+      }
+
+      .xitem {
+        color: #8091a1 !important;
+      }
+
+      .xbutton {
+        margin-top: 0 !important;
+        background-color: #0d6efd !important;
+        height: 75px !important;
+        display: flex !important;
+        align-items: center !important;
+        color: #fff !important;
+      }
+
+      .myblock {
+        height: 100vh !important;
+        overflow-y: scroll !important;
+        overflow-x: hidden !important;
+      }
+
+      .xcolor {
+        height: 75px !important;
+        background: #0d6efd !important;
+        margin-left: -2px;
+        border: none !important;
+      }
+
+      .xwhite {
+        color: #fff !important;
+      }
+
+      .xtop {
+        width: 33%;
+      }
+
+      .xbg {
+        background: url("./bg.jpg") !important;
+        background-size: cover !important;
+      }
+
+      .xbac {
+        border-bottom: 2px solid #0d6efd !important;
+        padding-bottom: 13px !important;
+      }
+
+      .card-body:before {
+        content: '12:23';
+        color: #8091a1;
+        display: flex;
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 30px;
+        right: 40px;
+        z-index: 4;
+      }
+
+      .card-body::after {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -7px;
+        right: -20px;
+
+        bottom: -1px;
+        border: 12px solid;
+        border-color: transparent transparent white transparent;
+      }
+
+      .xzet {
+        margin-top: 70px;
+        height: 200px;
+        overflow: hidden;
+        overflow-y: scroll;
+      }
+
+
+    }
+
+    button:hover {
+      color: #0d6efd !important;
+    }
+
+    @media screen and (max-width:991px) {
+      .xactive {
+        border-bottom: 2px solid #0d6efd;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid overflow-hidden p-0">
+    <!-- Telegram tanasi -->
+    <div class="col d-flex flex-row">
+      <!-- Tepa qismi -->
+      <div class="fblock col-lg-1 ps-lg-2 sideblock col col-lg-1 pt-2 w-100 bg-white position-fixed mb-5"
+        style="z-index:2;">
+
+        <!-- Brend qismi -->
+        <div class="zblock col-8 d-flex w-100 align-items-center justify-content-between">
+          <div class="col d-flex ms-lg-3">
+            <button type="button" class="button bg-transparent border-0 ps-lg-2 xmenu pt-lg-5" data-bs-toggle="button"
+              aria-pressed="false" autocomplete="off">
+              <span class="xszz material-icons">
+                menu
+              </span>
+
+            </button>
+            <p class="h5 ms-2 d-lg-none">Telegram</p>
+          </div>
+          <div class="col d-flex justify-content-end d-lg-none">
+            <button type="button" class="button bg-transparent border-0" data-bs-toggle="button" aria-pressed="false"
+              autocomplete="off">
+              <span class="xsz material-icons">
+                gpp_good
+              </span>
+            </button>
+            <button type="button" class="button bg-transparent border-0" data-bs-toggle="button" aria-pressed="false"
+              autocomplete="off">
+              <span class="material-icons">
+                search
+              </span>
+
+            </button>
+          </div>
+        </div>
+
+        <!-- folder qismi -->
+        <div class="col-4 w-100 xblock">
+          <nav class="navbar navbar-expand navbar-light justify-content-center border-bottom border-1 w-100">
+            <div class="nav navbar-nav flex-lg-column">
+              <a class="xitem nav-item nav-link active flex-lg-column text-lg-center xactive" href="#">All <span
+                  class="visually-hidden">(current)</span></a>
+              <a class="xitem nav-item nav-link d-flex align-items-center flex-lg-column" href="#"><span
+                  class="xsz position-relative material-icons me-1 d-none d-sm-block">
+                  chat_bubble
+                </span> Chats
+                <span class="d-none d-lg-block bg-primary text-white position-absolute rounded-circle px-1"
+                  style="margin-top:-5px;margin-left:10px;">23</span>
+
+              </a>
+              <a class="xitem nav-item nav-link d-flex align-items-center flex-lg-column" href="#"><span
+                  class="xsz material-icons me-1 d-none d-sm-block">
+                  groups
+                </span>Groups</a>
+              <a class="xitem nav-item nav-link d-flex align-items-center flex-lg-column" href="#"><span
+                  class="xsz material-icons me-1 d-none d-sm-block flex-lg-column">
+                  campaign
+                </span> Channels</a>
+              <a class="xitem nav-item nav-link d-flex align-items-center flex-lg-column" href="#"><span
+                  class="xsz material-icons me-1 d-none d-sm-block">
+                  smart_toy
+                </span>Bots
+                <span class="d-none d-lg-block bg-light text-black position-absolute rounded-circle px-1"
+                  style="margin-top:-5px;margin-left:10px;">23</span>
+              </a>
+              <a class="xitem nav-item nav-link align-items-center d-none d-lg-flex flex-lg-column" href="#"><span
+                  class="xsz material-icons me-1 ">
+                  list
+                </span>Edit</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Asos qismi -->
+      <div class="myblock col-lg-3 col-9 w-100 pe-lg-5">
+        <div class="list-group">
+
+          <input type="search" id="form1"
+            class="form-control d-none d-lg-block ms-4 justify-content-center border-0 bg-light my-4"
+            placeholder="Search..." />
+
+          <button type="button"
+            class="xbutton list-group-item  list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex"
+            style="margin-top:100px;">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="xwhite text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="xcolor col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1 xwhite">Yest</p>
+              <div class="xwhite d-lg-none me-3 bg-opacity-75 text-black-50 m-0 border-1"
+                style="width:max-content;transform: rotate(45deg);"><span class="material-icons">
+                  push_pin
+                </span></div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">16:12</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">16:12</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">16:12</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">16:12</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">16:12</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">16:12</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">16:12</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">16:12</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">16:12</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">27 feb</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">16:12</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">16:12</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action w-100 border-0 border-bottom border-1 py-2 d-flex">
+            <img class="rounded-circle me-2" src="https://picsum.photos/50/50?random=1" alt="lorem">
+            <div class="col">
+              <p class="h6">Telegram info</p>
+              <p class="text-truncate m-0 text-black-50" style="width:200px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste consequatur odio facere non est rerum animi, repudiandae praesentium placeat
+                voluptatem provident distinctio consectetur hic neque alias quae quas nemo minus!</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-end">
+              <p class="text-black-50 m-0 px-2 mb-1">16:12</p>
+              <div class="bg-light bg-opacity-75 text-dark m-0 rounded-pill px-2" style="width:max-content;">8176</div>
+            </div>
+          </button>
+
+        </div>
+      </div>
+      <div class="col col-lg-4 d-none d-lg-block border-end border-1">
+        <div class="xtop col-2 position-fixed">
+          <nav class="navbar navbar-light bg-white">
+            <div class="container-fluid">
+              <div class="d-flex flex-column position-relative">
+                <p class="h6 m-0">Telegram</p>
+                <p class="text-black-50 m-0" id="hover" onmouseover=x(); style="cursor:pointer;">Sevice Center</p>
+
+              </div>
+
+              <div class="d-flex">
+                <button type="button" class="button bg-transparent border-0" data-bs-toggle="button"
+                  aria-pressed="false" autocomplete="off">
+                  <span class="material-icons">
+                    search
+                  </span>
+
+                </button>
+
+                <button type="button" class="button bg-transparent border-0" data-bs-toggle="button"
+                  aria-pressed="false" autocomplete="off">
+                  <span class="material-icons-outlined">
+                    view_sidebar
+                  </span>
+
+                </button>
+
+                <button type="button" class="button bg-transparent border-0" data-bs-toggle="button"
+                  aria-pressed="false" autocomplete="off">
+                  <span class="material-icons-outlined">
+                    more_vert
+                  </span>
+
+                </button>
+
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="list-group ms-2 position-absolute xzet" id="show" style="display: none;">
+
+          <button type="button" style="z-index:20 !important;" onclick="x()"
+            class="list-group-item list-group-item-action ps-1 px-2 pe-4 d-flex align-items-center">
+            <img class="rounded-circle me-3 align-self-center" src="https://picsum.photos/35/35?random=1" alt="lorem">
+            <div class="tblock">
+              <div class="h6">Telegram</div>
+              <div class="text-primary">online</div>
+            </div>
+          </button>
+          <button type="button" style="z-index:20 !important;"
+            class="list-group-item list-group-item-action ps-1 px-2 pe-4 d-flex align-items-center">
+            <img class="rounded-circle me-3 align-self-center" src="https://picsum.photos/35/35?random=1" alt="lorem">
+            <div class="tblock">
+              <div class="h6">Telegram</div>
+              <div class="text-black-50">last seen recently</div>
+            </div>
+          </button>
+          <button type="button" style="z-index:20 !important;" onclick="x()"
+            class="list-group-item list-group-item-action ps-1 px-2 pe-4 d-flex align-items-center">
+            <img class="rounded-circle me-3 align-self-center" src="https://picsum.photos/35/35?random=1" alt="lorem">
+            <div class="tblock">
+              <div class="h6">Telegram</div>
+              <div class="text-black-50">last seen 1 hours ago</div>
+            </div>
+          </button>
+          <button type="button" style="z-index:20 !important;" onclick="x()"
+          class="list-group-item list-group-item-action ps-1 px-2 pe-4 d-flex align-items-center">
+          <img class="rounded-circle me-3 align-self-center" src="https://picsum.photos/35/35?random=1" alt="lorem">
+          <div class="tblock">
+            <div class="h6">Telegram</div>
+            <div class="text-black-50">last seen 1 hours ago</div>
+          </div>
+        </button>
+
+        <button type="button" style="z-index:20 !important;" onclick="x()"
+        class="list-group-item list-group-item-action ps-1 px-2 pe-4 d-flex align-items-center">
+        <img class="rounded-circle me-3 align-self-center" src="https://picsum.photos/35/35?random=1" alt="lorem">
+        <div class="tblock">
+          <div class="h6">Telegram</div>
+          <div class="text-black-50">last seen 1 hours ago</div>
+        </div>
+      </button>
+
+        </div>
+        <div class="w-100 col-8 xbg d-flex flex-column align-items-center"
+          style="margin-top: 70px;overflow-y: scroll; height:83vh;">
+          <div class="card w-75 mt-2 mb-2 bg-white">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, deserunt
+                consectetur repellat error debitis aspernatur consequuntur quidem ducimus, optio non neque nobis
+                voluptates ut maxime, dolore repellendus obcaecati at repudiandae?</p>
+            </div>
+          </div>
+          <div class="card w-75 mt-2 mb-2 bg-white">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, deserunt
+                consectetur repellat error debitis aspernatur consequuntur quidem ducimus, optio non neque nobis
+                voluptates ut maxime, dolore repellendus obcaecati at repudiandae?</p>
+            </div>
+          </div>
+          <div class="card w-75 mt-2 mb-2 bg-white">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, deserunt
+                consectetur repellat error debitis aspernatur consequuntur quidem ducimus, optio non neque nobis
+                voluptates ut maxime, dolore repellendus obcaecati at repudiandae?</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-2 w-100">
+
+          <div class="d-flex align-items-center">
+            <button type="button" class="button bg-transparent border-0" data-bs-toggle="button" aria-pressed="false"
+              autocomplete="off">
+              <span class="material-icons">
+                attach_file
+              </span>
+            </button>
+            <input class="border-0 w-100 py-3 px-2" type="text" name="text" id="text" placeholder="Type Something..."
+              style="outline: none;">
+            <span class="material-icons">
+              <button type="button" class="button bg-transparent border-0" data-bs-toggle="button" aria-pressed="false"
+                autocomplete="off">
+                <span class="material-icons">
+                  insert_emoticon
+                </span>
+              </button>
+              <button type="button" class="button bg-transparent border-0" data-bs-toggle="button" aria-pressed="false"
+                autocomplete="off">
+                <span class="text-primary material-icons">
+                  send
+                </span>
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-6 d-none d-lg-block">
+        <div class="xtop col-2 pt-3">
+          <nav class="navbar navbar-light bg-white d-flex pb-0">
+            <div class="ps-5 d-flex justify-content-center">
+
+              <button type="button" class="button bg-transparent border-0 pb-3" data-bs-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                Emoji
+              </button>
+              <button type="button" class="button bg-transparent border-0 pb-3" data-bs-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                Stickers
+              </button>
+              <button type="button" class="xbac button bg-transparent border-0 pb-3" data-bs-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                GIF
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="col-10 border-top border-1 pt-2">
+          <ul class="list-unstyled">
+            <li>
+              <video src="./zg.mp4" autoplay muted loop></video>
+            </li>
+            <li>
+              <video src="./z.mp4" autoplay muted loop></video>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    
+    
+    function x(){
+      var el = document.getElementById("show");
+        if (el.style.display == "none") {
+          el.style.display = "block";
+        } else {
+          el.style.display = "none";
+        }
+      }
+    </script>
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
