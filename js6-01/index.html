@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    .form-check-input:checked+.form-check-label {
+      text-decoration: line-through !important;
+      color: #dc354d !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container d-flex flex-column align-items-center">
+    <h1 class="h1">Masalliqlar ro'yxati</h1>
+    <form class="form form-control " action="https://echo.htmlacademy.ru" method="get">
+      <div class="mb-3 mt-3">
+        <label for="marketitem" class="form-label">Masalliqni kiriting</label>
+        <input type="text" class="input form-control" name="marketitem" id="marketitem" aria-describedby="helpId"
+          value="" placeholder="Olma" required="required">
+        <small id="helpId" class="form-text text-muted">Olma, Anor</small>
+      </div>
+      <button type="submit" class="mb-3 btn btn-primary">Submit</button>
+      <div class="output rounded bg-primary bg-opacity-25 p-3">
+
+
+      </div>
+    </form>
+  </div>
+  <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
