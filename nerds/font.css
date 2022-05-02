@@ -1,0 +1,18 @@
+@font-face {
+    font-family: roboto;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('fonts/web/roboto.woff'), url('fonts/web/roboto.woff2'), url('fonts/Roboto-master/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: roboto;
+    font-style: bold;
+    src: url('fonts/web/robotobold.woff'), url('fonts/web/robotobold.woff2'), url('fonts/Roboto-master/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: roboto;
+    font-style: italic;
+    src: url('fonts/web/roboto.woff2'), url('fonts/Roboto-master/Roboto-Italic.ttf');
+} 

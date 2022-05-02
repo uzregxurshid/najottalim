@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="../font.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="top-bar-boxs">
+                <img src="../svg/nerds-logo.svg" class="logo" alt="logo">
+            </div>
+            <div class="top-bar-boxs">
+                <a href="#" class="top-links">Студия</a>
+                <a href="#" class="top-links">клиенты</a>
+                <a href="# " class="top-links active-link">магазин</a>
+                <a href="#" class="top-links">контакты</a>
+            </div>
+            <div class="top-bar-boxs">
+                <a href="#" class="top-links cart">
+                    <img src="../svg/cart-icon.svg" alt="cart">
+                    корзина</a>
+            </div>
+        </div>
+        <div class="top-header">
+            <h1>Магазин готовых шаблонов</h1>
+        </div>
+        <div class="product-header">
+            <div class="heads">
+                <h4>Стоимость:</h4>
+            </div>
+            <div class="heads">
+                <h4>Сортировать:</h4>
+            </div>
+            <div class="heads">
+                <a href="#" class="heads-links headactive">по цене</a>
+                <a href="#" class="heads-links">по типу</a>
+                <a href="#" class="heads-links">по названию</a>
+                <a href="#" class="heads-links">▲</a>
+                <a href="#" class="heads-links">▼</a>
+            </div>
+        </div>
+
+        <div class="catalog">
+            <div class="product-selectors">
+                <!-- <form>
+                        <div data-role="rangeslider">
+                            <label for="range-1a">Rangeslider:</label>
+                            <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40"
+                                data-popup-enabled="true" data-show-value="true">
+                            <label for="range-1b">Rangeslider:</label>
+                            <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80"
+                                data-popup-enabled="true" data-show-value="true">
+                        </div>
+                    </form> -->
+                <form action="#" method="get">
+                    <input type="range" name="selector1" id="selector1" min=0>
+                    <input type="range" name="selector1" id="selector1" max=15000>
+
+                    <h4>Сетка:</h4>
+                    <input type="radio" name="selector-radio" id="selector-radio">
+                    Адаптивная
+                    <br><input type="radio" name="selector-radio" id="selector-radio">
+                    Фиксированная
+                    <br><input type="radio" name="selector-radio" id="selector-radio">
+                    Резиновая
+                    <h4>Особенности:</h4>
+                    <input type="checkbox" name="checkbox-items" id="">
+                    Слайдер
+                    <br><input type="checkbox" name="checkbox-items" id="">
+                    Блок преимуществ
+                    <br><input type="checkbox" name="checkbox-items" id="">
+                    Новости
+                    <br><input type="checkbox" name="checkbox-items" id="">
+                    Галерея
+                    <br><input type="checkbox" name="checkbox-items" id="">
+                    Корзина
+                    <br><a href="#" class="button">показать</a>
+                </form>
+
+            </div>
+            <div class="products">
+                <div class="bars">
+                    <div class="product-img sedona">
+                        <div class="product-img-top">
+                            <i class="circle1"></i>
+                            <i class="circle2"></i>
+                            <i class="circle3"></i>
+                        </div>
+                        <div class="img-img">
+                            <img src="../nerds/img/img-sedona.jpg.png" alt="pink">
+                        </div>
+                        <div class="img-bottom">
+                            <h4>SEDONA</h4>
+                            <p>Информаионный сайт<br>для Туристов</p>
+                            <p class="img-bottom-link"><a href="#">9900 РУБ.</a></p>
+                        </div>
+                    </div>
+                    <div class="product-img pink">
+                        <div class="product-img-top">
+                            <i class="circle1"></i>
+                            <i class="circle2"></i>
+                            <i class="circle3"></i>
+                        </div>
+                        <div class="img-img">
+                            <img src="../nerds/img/img-pink.jpg.png" alt="pink">
+                        </div>
+                        <div class="img-bottom">
+                            <h4>PINK APP</h4>
+                            <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+                            <p class="img-bottom-link"><a href="#">9900 РУБ.</a></p>
+                        </div>
+                    </div>
+                    <div class="product-img barbershop">
+                        <div class="product-img-top">
+                            <i class="circle1"></i>
+                            <i class="circle2"></i>
+                            <i class="circle3"></i>
+                        </div>
+                        <div class="img-img">
+                            <img src="../nerds/img/img-barbershop.jpg.png" alt="pink">
+                        </div>
+                        <div class="img-bottom">
+                            <h4>BARBERSHOP</h4>
+                            <p>Сайт салоны красоты.<br>Для мужчин, да.</p>
+                            <p class="img-bottom-link"><a href="#">9900 РУБ.</a></p>
+                        </div>
+                    </div>
+                    <div class="product-img mishka">
+                        <div class="product-img-top">
+                            <i class="circle1"></i>
+                            <i class="circle2"></i>
+                            <i class="circle3"></i>
+                        </div>
+                        <div class="img-img">
+                            <img src="../nerds/img/img-mishka.jpg.png" alt="pink">
+                        </div>
+                        <div class="img-bottom">
+                            <h4>MISHKA</h4>
+                            <p>Интернет-магазин<br>вязанных игрушек</p>
+                            <p class="img-bottom-link"><a href="#">9900 РУБ.</a></p>
+                        </div>
+                    </div>
+                    <div class="product-img aplus">
+                        <div class="product-img-top">
+                            <i class="circle1"></i>
+                            <i class="circle2"></i>
+                            <i class="circle3"></i>
+                        </div>
+                        <div class="img-img">
+                            <img src="../nerds/img/img-aplus.jpg.png" alt="pink">
+                        </div>
+                        <div class="img-bottom">
+                            <h4>A PLUS</h4>
+                            <p>Лендинг курсов повышения<br>квалификации</p>
+                            <p class="img-bottom-link"><a href="#">9900 РУБ.</a></p>
+                        </div>
+                    </div>
+                    <div class="product-img kvast">
+                        <div class="product-img-top">
+                            <i class="circle1"></i>
+                            <i class="circle2"></i>
+                            <i class="circle3"></i>
+                        </div>
+                        <div class="img-img">
+                            <img src="../nerds/img/img-kvast.jpg.png" alt="pink">
+                        </div>
+                        <div class="img-bottom">
+                            <h4>КВАСТ</h4>
+                            <p>Промо-сайт производителя<br>крафтового кваса</p>
+                            <p class="img-bottom-link"><a href="#">9900 РУБ.</a></p>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">Следующая</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="map">
+
+            <div class="imtxt">
+                <h3>Nerd design studio</h3>
+                <address>191186, Санк-Петебург,<br>ул.Б.Конюшенная,д. 19/8 <br>тел.</address>
+                <a href="tel:+78122757575" class="tel">+7 (812) 275-75-75</a>
+                <br>
+                <a href="#" class="imlink">Напишити нам</a>
+            </div>
+        </div>
+        <footer>
+            <div class="fel1">
+                <div class="blocks"> <a href="#"><img src="../svg/vk-icon.svg" alt="vk-icon"></a></div>
+                <div class="blocks"> <a href="#"><img src="../svg/fb-icon.svg" alt="fb-icon"></a></div>
+                <div class="blocks"> <a href="#"><img src="../svg/insta-icon.svg" alt="insta-icon"></a></div>
+            </div>
+            <div class="fel2">
+                <h2>Давайте дружить, это выгодно!</h2>
+                <p>Скидка 10% для друзей из социалных сетей</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
