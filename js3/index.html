@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+  <script src="./bootstrap/dist/js/bootstrap.bundle.min.js" async defer></script>
+  <script src="./js/main.js" async defer></script>
+</head>
+
+<body>
+
+  <div class="bg-gradient bg-light container-fluid d-flex justify-content-center align-items-center vh-100">
+    
+    <form class="form d-flex flex-column" method="GET" action="https://echo.htmlacademy.ru">
+      <div class="d-flex">
+        <div class="mb-3 me-2">
+          <label for="fname" class="form-label">Ismingiz</label>
+          <input type="text" class="form-control" name="fname" id="fname" aria-describedby="helpId"
+            placeholder="Ismingiz" required="required">
+          <small id="helpId" class="form-text text-muted">Masalan: Jamoliddin</small>
+        </div>
+        <div class="mb-3">
+          <label for="lname" class="form-label">Familiyangiz:</label>
+          <input type="text" class="form-control" name="lname" id="lname" aria-describedby="helpId"
+            placeholder="Familiyangiz" required="required">
+          <small id="helpId" class="form-text text-muted">Masalan: Kamoliddinov</small>
+        </div>
+      </div>
+      <div>
+        <div class="mb-3">
+          <label for="tdate" class="form-label">Tug'ilgan sanangiz</label>
+          <input type="date" class="form-control form-control-sm|lg" name="tdate" id="tdate" aria-describedby="helpId">
+          <small id="helpId" class="form-text text-muted" required="required">Masalan: 21.01.2000</small>
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary">Yuborish</button>
+      </form>
+  </div>
+  </form>
+
+</body>
+
+</html>

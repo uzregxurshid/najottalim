@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #161616;
+}
+
+.text {
+    z-index: 1;
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 200;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10pxpx;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, .2));
+
+}
+
+.text span:nth-child(1) {
+    color: dodgerblue;
+    animation: animText 1s ease-in-out infinite;
+}
+
+.text span:nth-child(2) {
+    color: chocolate;
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+.text span:nth-child(3) {
+    color: yellow;
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 1.2s;
+}
+
+.text span:nth-child(4) {
+    color: springgreen;
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 1.6s;
+}
+
+@keyframes animText {
+    0% {
+        font-weight: 200;
+    }
+
+    50% {
+        font-weight: 900;
+    }
+
+    100% {
+        font-weight: 200;
+    }
+}
+
+.text span:nth-child(5) {
+    color: dodgerblue;
+    font-weight: 900;
+    animation: animMark 1s ease-in-out infinite;
+}
+
+@keyframes animMark {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+.stars-01 {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    box-shadow: 100px 200px yellow, 200px 400px yellow,
+        300px 300px green, 50px 350px dodgerblue,
+        340px 370px red, 150px 390px rgb(153, 132, 15),
+        600px 300px yellowgreen, 500px 200px dodgerblue,
+        450px 600px #ea3122, 400px 400px springgreen,
+        350px 40px #abc433, 325px 143px blue,
+        300px 550px yellow, 250px 450px red,
+        700px 800px yellow, 800px 1000px yellow,
+    1100px 900px green, 650px 950px dodgerblue,
+        940px 970px red, 750px 990px rgb(153, 132, 15),
+        1200px 900px yellowgreen, 1100px 800px dodgerblue,
+        1050px 1200px #ea3122, 1000px 1000px springgreen,
+        950px 640px #abc433, 925px 743px blue,
+        900px 1150px yellow, 850px 1050px red
+        
+        
+        ;
+    animation: starsUp 10s linear infinite;
+}
+.stars-02 {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    box-shadow: 150px 250px yellow, 250px 450px yellow,
+        350px 350px green, 100px 390px dodgerblue,
+        390px 420px red, 200px 490px rgb(153, 132, 15),
+        650px 350px yellowgreen, 550px 250px dodgerblue,
+        500px 650px #ea3122, 450px 450px springgreen,
+        400px 90px #abc433, 375px 193px blue,
+        350px 600px yellow, 300px 500px red,
+        750px 850px yellow, 850px 1050px yellow,
+    1150px 950px green, 700px 1000px dodgerblue,
+        990px 1020px red, 800px 1041px rgb(153, 132, 15),
+        1250px 950px yellowgreen, 1150px 850px dodgerblue,
+        1100px 1250px #ea3122, 1050px 1050px springgreen,
+        950px 640px #abc433, 975px 793px blue,
+        950px 1200px yellow, 900px 1100px red
+        
+        
+        ;
+    animation: starsUp 10s linear infinite;
+}
+
+@keyframes starsUp {
+    0% {
+        transform: translateY(500px);
+    }
+
+    100% {
+        transform: translateY(-2000px);
+    }
+}
