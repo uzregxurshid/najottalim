@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100 flex-column">
+<% if (registered && registered === "already") { %>
+    <h2 class="h2 text-danger">User already registered</h2>
+<% } %>
+<form method="post" action="/register" class="w-50" enctype="multipart/form-data">
+    <!-- #region -->
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <div class="input-group">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input name="username" type="text" class="form-control" id="username" autocomplete="country-username"/>
+        </div>
+
+        <% if(logs) { %>
+            <% const username = logs.find(item => item.param === "username") %>
+            <% if (username){ %>
+                <div class="form-text text-danger">
+                    <%= username.msg %>
+                </div>
+            <% } %>
+        <% } %>
+
+    </div>
+    <!-- #region -->
+    <div class="mb-3">
+        <label for="userpassword" class="form-label">Password</label>
+        <input name="password" type="password" class="form-control" id="userpassword" autocomplete="current-password"/>
+        <% if(logs) { %>
+            <% const username = logs.find(item => item.param === "password") %>
+            <% if (username){ %>
+                <div class="form-text text-danger">
+                    <%= username.msg %>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+    <!-- #region -->
+    <div class="mb-3">
+        <label for="userdate" class="form-label">Date</label>
+        <input name="date" type="date" class="form-control" id="userdate"/>
+        <% if(logs) { %>
+            <% const username = logs.find(item => item.param === "date") %>
+            <% if (username){ %>
+                <div class="form-text text-danger">
+                    <%= username.msg %>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+    <!-- #region-->
+    <div class="mb-3">
+        <label for="file" class="form-label" multiple>Choose your file!</label>
+        <input name="myfile" type="file" class="form-control" id="file" multiple/>
+    </div>
+
+    <!-- #region -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+
+</html>
